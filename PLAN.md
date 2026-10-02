@@ -94,9 +94,9 @@ Mai târziu: Codul Civil și Codul Fiscal (mari, cu structură complexă).
 - [x] Teste: numărul de articole extrase corespunde realității pentru fiecare lege
 
 ### Faza 3: Indexare *(~1 zi)*
-- [ ] Embeddings cu `bge-m3` și salvare în Chroma
-- [ ] Index BM25 pe același text
-- [ ] Script `index.py` reluabil (re-indexează doar ce s-a schimbat)
+- [x] Embeddings cu `bge-m3` și salvare în Chroma
+- [x] Index BM25 pe același text
+- [x] Script `index.py` reluabil (re-indexează doar ce s-a schimbat)
 
 ### Faza 4: Retrieval *(~2 zile)*
 - [ ] Căutare vectorială (top 30) și BM25 (top 30)

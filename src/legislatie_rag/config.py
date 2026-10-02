@@ -7,6 +7,12 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT_DIR / "data"
 RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
+CHUNKS_PATH = PROCESSED_DIR / "chunks.jsonl"
+# Sufixul .nosync exclude indexul din iCloud: sincronizarea unui SQLite în uz îl poate corupe.
+INDEX_DIR = DATA_DIR / "index.nosync"
+
+EMBEDDING_MODEL = "BAAI/bge-m3"
+CHROMA_COLLECTION = "legislatie"
 
 PORTAL_URL = "https://legislatie.just.ro/Public/DetaliiDocument/{doc_id}"
 

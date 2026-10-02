@@ -11,7 +11,7 @@ Utilizare:
 import json
 from dataclasses import asdict, dataclass
 
-from legislatie_rag.config import LAWS, PROCESSED_DIR
+from legislatie_rag.config import CHUNKS_PATH, LAWS, PROCESSED_DIR
 
 # ~800 de tokeni pentru texte în română (≈ 4 caractere / token).
 MAX_CHARS = 3200
@@ -38,6 +38,11 @@ class Chunk:
     @property
     def citation(self) -> str:
         return f"{self.law_ref}, art. {self.article}"
+
+
+def load_chunks(path=CHUNKS_PATH) -> list[Chunk]:
+    with open(path, encoding="utf-8") as f:
+        return [Chunk(**json.loads(line)) for line in f]
 
 
 def build_header(article: dict) -> str:
@@ -113,7 +118,7 @@ def main() -> None:
         all_chunks.extend(chunks)
         print(f"✓ {law.short_ref:<16} {len(chunks):>4} chunk-uri")
 
-    out = PROCESSED_DIR / "chunks.jsonl"
+    out = CHUNKS_PATH
     with out.open("w", encoding="utf-8") as f:
         for chunk in all_chunks:
             f.write(json.dumps(asdict(chunk), ensure_ascii=False) + "\n")

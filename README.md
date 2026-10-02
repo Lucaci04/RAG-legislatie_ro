@@ -18,6 +18,7 @@ uv sync
 uv run python -m legislatie_rag.ingest.download   # descarcă forma consolidată a legilor
 uv run python -m legislatie_rag.ingest.parse      # HTML → articole structurate
 uv run python -m legislatie_rag.ingest.chunk      # articole → chunk-uri pentru indexare
+uv run python -m legislatie_rag.index.vector      # embeddings bge-m3 → Chroma (incremental)
 uv run pytest
 ```
 

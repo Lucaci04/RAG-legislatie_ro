@@ -13,7 +13,7 @@ __pycache__/
 # Date generate (se pot regenera cu scripturile din proiect)
 data/raw/
 data/processed/
-data/index/
+data/index.nosync/
 
 # Modele descărcate
 models/

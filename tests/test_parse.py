@@ -37,11 +37,21 @@ HTML = f"""
 <span class="S_CAP"><span class="S_CAP_TTL">Capitolul II</span>
 <span class="S_CAP_DEN">Concedii</span>
 <span class="S_CAP_BDY">
-{article("10", aln(1, "Concediul este de 20 de zile.")
-    + '<span class="S_PAR">(la 25-01-2015, Alin. (2) a fost modificat de LEGEA nr. 12)</span>'
-    + aln(2, 'Vezi <span class="S_LGI">art. 152^2</span>.'))}
-{article("11", '<span class="S_PAR">Abrogat.</span>'
-    + '<span class="S_PAR">(la 01-02-2014, Art. 11 a fost abrogat de LEGEA nr. 2)</span>')}
+{
+    article(
+        "10",
+        aln(1, "Concediul este de 20 de zile.")
+        + '<span class="S_PAR">(la 25-01-2015, Alin. (2) a fost modificat de LEGEA nr. 12)</span>'
+        + aln(2, 'Vezi <span class="S_LGI">art. 152^2</span>.'),
+    )
+}
+{
+    article(
+        "11",
+        '<span class="S_PAR">Abrogat.</span>'
+        + '<span class="S_PAR">(la 01-02-2014, Art. 11 a fost abrogat de LEGEA nr. 2)</span>',
+    )
+}
 {article("12", '<span class="S_PAR">Suveranitatea</span>' + aln(1, "Puterea aparţine poporului."))}
 </span></span></span></span>
 <span class="S_NTA"><span class="S_NTA_PAR">Notă: Articolul IV din altă lege...</span></span>
