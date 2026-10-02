@@ -87,7 +87,7 @@ def sync_index(chunks: list[Chunk], batch_size: int = 64) -> None:
         print(f"  {min(i + batch_size, len(todo))}/{len(todo)}", end="\r", flush=True)
 
     if todo:
-        print(f"\n✓ {len(todo)} embeddings în {time.perf_counter() - start:.0f}s")
+        print(f"\n{len(todo)} embeddings în {time.perf_counter() - start:.0f}s")
     print(f"Total în index: {collection.count()}")
 
 

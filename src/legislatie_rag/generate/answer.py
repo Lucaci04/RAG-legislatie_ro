@@ -98,18 +98,18 @@ class RAG:
 
 
 def print_answer(answer: Answer) -> None:
-    print(f"\n❓ {answer.question}\n")
+    print(f"\nÎntrebare: {answer.question}\n")
     print(answer.text)
-    print("\n📚 Surse citate:")
+    print("\nSurse citate:")
     for n in answer.cited:
         hit = answer.sources[n - 1]
         date = hit.chunks[0].consolidation_date or "forma republicată"
         print(f"  [{n}] {hit.citation}  (versiune: {date})  {hit.chunks[0].url}")
     if answer.invalid_citations:
-        print(f"⚠️  Citări fără sursă: {answer.invalid_citations}")
+        print(f"Citări fără sursă: {answer.invalid_citations}")
     print(
-        f"\n⏱  căutare {answer.retrieval_ms:.0f} ms · generare {answer.generation_ms:.0f} ms"
-        f" · {answer.model}\nℹ️  {DISCLAIMER}"
+        f"\nCăutare {answer.retrieval_ms:.0f} ms · generare {answer.generation_ms:.0f} ms"
+        f" · {answer.model}\n{DISCLAIMER}"
     )
 
 

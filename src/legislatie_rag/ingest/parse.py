@@ -176,7 +176,7 @@ def main() -> None:
                 f.write(json.dumps(asdict(article), ensure_ascii=False) + "\n")
 
         active = sum(not a.abrogated for a in articles)
-        print(f"✓ {law.short_ref:<16} {len(articles):>4} articole ({active} în vigoare)")
+        print(f"  {law.short_ref:<16} {len(articles):>4} articole ({active} în vigoare)")
 
 
 if __name__ == "__main__":

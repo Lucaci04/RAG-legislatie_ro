@@ -1,10 +1,11 @@
-"""Interfața web: chat cu legislația, cu sursele afișate sub fiecare răspuns.
+"""Interfața web: întrebări despre legislație, cu sursele afișate sub fiecare răspuns.
 
 Utilizare:
     uv run streamlit run src/legislatie_rag/app/streamlit_app.py
 """
 
-import re
+from html import escape
+from pathlib import Path
 
 import streamlit as st
 
@@ -15,99 +16,129 @@ from legislatie_rag.retrieve.hybrid import ArticleHit
 EXAMPLES = [
     "Câte zile de concediu de odihnă am minim pe an?",
     "Mă poate concedia angajatorul cât sunt în concediu medical?",
-    "Ce amendă iau dacă trec pe roșu?",
     "Ce pedeapsă primești pentru furt, în funcție de gravitate?",
+    "Ce amendă iau dacă trec pe roșu?",
     "Ce vârstă trebuie să ai ca să candidezi la președinție?",
-    "Care este capitalul social minim pentru un SRL?",
 ]
+LAW_NAMES = {law.slug: law.name for law in LAWS}
 
-st.set_page_config(page_title="Legislație RO · asistent", page_icon="⚖️", layout="centered")
+st.set_page_config(
+    page_title="Legislație RO",
+    page_icon=":material/balance:",
+    layout="centered",
+    initial_sidebar_state="expanded",
+)
+st.markdown(
+    f"<style>{(Path(__file__).parent / 'style.css').read_text(encoding='utf-8')}</style>",
+    unsafe_allow_html=True,
+)
 
 
-@st.cache_resource(show_spinner="Se încarcă modelele de căutare (prima pornire durează ~30 s)…")
+def html(markup: str) -> None:
+    st.markdown(markup, unsafe_allow_html=True)
+
+
+def format_date(iso: str | None) -> str:
+    if not iso:
+        return "forma republicată"
+    year, month, day = iso.split("-")
+    return f"{day}.{month}.{year}"
+
+
+@st.cache_resource(show_spinner="Se încarcă modelele de căutare…")
 def load_rag() -> RAG:
     rag = RAG()
     rag.retriever.search("încălzire")  # prima căutare pe GPU e lentă; o facem la pornire
     return rag
 
 
-def law_versions(rag: RAG) -> dict[str, tuple[str | None, str]]:
-    versions = {}
-    for chunk in rag.retriever.chunks:
-        versions.setdefault(chunk.law_slug, (chunk.consolidation_date, chunk.url))
-    return versions
-
-
-def emphasize_markers(text: str) -> str:
-    """[1] → **[1]**, ca trimiterile la surse să iasă în evidență."""
-    return re.sub(r"\[(\d+)\]", r"**[\1]**", text)
+def source_label(n: int, hit: ArticleHit) -> str:
+    """„[1]  Codul penal · art. 228 · Furtul”"""
+    label_line = hit.chunks[0].header.split("\n")[-1]
+    title = label_line.split(" - ", 1)[1] if " - " in label_line else ""
+    parts = [LAW_NAMES.get(hit.law_slug, hit.chunks[0].law_ref), f"art. {hit.article}"]
+    if title:
+        parts.append(title)
+    return f"[{n}]  " + " · ".join(parts)
 
 
 def render_source(n: int, hit: ArticleHit) -> None:
     first = hit.chunks[0]
-    version = first.consolidation_date or "forma republicată"
-    with st.expander(f"**[{n}]** {hit.citation}"):
-        st.caption(first.header.replace("\n", " · "))
+    with st.expander(source_label(n, hit)):
+        crumb = " / ".join(first.header.split("\n")[0].split(" > ")[1:])
+        if crumb:
+            html(f'<div class="lr-crumb">{escape(crumb)}</div>')
         st.markdown("\n\n".join(c.body.replace("\n", "  \n") for c in hit.chunks))
-        st.caption(f"Versiune consolidată: {version} · [textul oficial]({first.url})")
+        html(
+            f'<div class="lr-source-foot">{escape(first.law_ref)} · versiune consolidată '
+            f"{format_date(first.consolidation_date)} · "
+            f'<a href="{escape(first.url)}" target="_blank">text oficial</a></div>'
+        )
 
 
 def render_answer(answer: Answer) -> None:
     if answer.llm_error:
-        st.warning(answer.text, icon="⚠️")
+        html(f'<div class="lr-notice">{escape(answer.text)}</div>')
     else:
-        st.markdown(emphasize_markers(answer.text))
-    if answer.invalid_citations:
-        st.caption(f"⚠️ Citări fără sursă detectate: {answer.invalid_citations}")
+        st.markdown(answer.text)
 
     cited = set(answer.cited)
-    primary = [n for n in range(1, len(answer.sources) + 1) if n in cited or answer.llm_error]
-    others = [n for n in range(1, len(answer.sources) + 1) if n not in primary]
+    numbers = range(1, len(answer.sources) + 1)
+    primary = [n for n in numbers if n in cited or answer.llm_error]
+    others = [n for n in numbers if n not in primary]
+
     if primary:
-        st.markdown("**Surse**")
+        html('<div class="lr-label">Surse</div>')
         for n in primary:
             render_source(n, answer.sources[n - 1])
     if others:
-        with st.expander(f"Alte {len(others)} articole găsite, necitate în răspuns"):
+        with st.expander(f"Alte articole găsite ({len(others)})"):
             for n in others:
-                hit = answer.sources[n - 1]
-                st.markdown(f"**[{n}]** {hit.citation} — {hit.chunks[0].body[:140]}…")
+                html(
+                    f'<div class="lr-other">{escape(source_label(n, answer.sources[n - 1]))}</div>'
+                )
 
-    timing = f"căutare {answer.retrieval_ms / 1000:.1f} s"
+    meta = [f"Căutare {answer.retrieval_ms / 1000:.1f} s"]
     if answer.model:
-        timing += f" · generare {answer.generation_ms / 1000:.1f} s · {answer.model}"
-    st.caption(timing)
+        meta += [f"generare {answer.generation_ms / 1000:.1f} s", answer.model]
+    if answer.invalid_citations:
+        meta.append(f"citări fără sursă: {answer.invalid_citations}")
+    html(f'<div class="lr-meta">{escape(" · ".join(meta))}</div>')
 
 
 def sidebar(rag: RAG) -> list[str]:
+    versions: dict[str, tuple[str | None, str]] = {}
+    for chunk in rag.retriever.chunks:
+        versions.setdefault(chunk.law_slug, (chunk.consolidation_date, chunk.url))
+
     with st.sidebar:
-        st.header("⚖️ Legislație RO")
-        st.markdown(
-            "Asistent RAG care răspunde **doar pe baza textului oficial** al legilor, "
-            "cu trimitere la articol."
+        html('<div class="lr-overline">Asistent juridic</div>')
+        html('<div class="lr-side-title">Legislație RO</div>')
+        html(
+            '<div class="lr-side-text">Răspunsuri formulate exclusiv pe baza textului oficial '
+            "al legilor, cu trimitere la articol.</div>"
         )
-        st.subheader("Legi indexate")
-        versions = law_versions(rag)
+        html('<div class="lr-label">Acte indexate</div>')
         for law in LAWS:
             date, url = versions.get(law.slug, (None, ""))
-            st.markdown(
-                f"- [{law.name}]({url}) · {law.short_ref}  \n"
-                f"  <small>versiune: {date or 'forma republicată'}</small>",
-                unsafe_allow_html=True,
+            html(
+                f'<div class="lr-law"><a href="{escape(url)}" target="_blank">'
+                f"{escape(law.name)}</a>"
+                f"<span>{escape(law.short_ref)} · {format_date(date)}</span></div>"
             )
         selected = st.multiselect(
-            "Caută doar în",
+            "Restrânge căutarea",
             options=[law.slug for law in LAWS],
-            format_func=lambda slug: next(law.name for law in LAWS if law.slug == slug),
-            placeholder="Toate legile",
-        )
-        st.divider()
-        st.caption(
-            f"Fiecare întrebare e tratată independent (fără memoria conversației). {DISCLAIMER}"
+            format_func=LAW_NAMES.get,
+            placeholder="Toate actele",
         )
         if st.button("Conversație nouă", use_container_width=True):
             st.session_state.messages = []
             st.rerun()
+        html(
+            f'<div class="lr-disclaimer">{DISCLAIMER} '
+            "Fiecare întrebare este tratată independent.</div>"
+        )
     return selected
 
 
@@ -115,37 +146,39 @@ def main() -> None:
     rag = load_rag()
     laws = sidebar(rag)
 
-    st.title("Întreabă legea")
-    st.caption(" · ".join(law.name for law in LAWS))
+    html('<div class="lr-overline">Legislația României · text oficial</div>')
+    html('<h1 class="lr-title">Întreabă legea</h1>')
+    html(
+        '<div class="lr-lead">Pune o întrebare în limbaj obișnuit. Răspunsul citează articolele '
+        "de lege pe care se bazează, iar textul lor complet este disponibil sub răspuns.</div>"
+    )
+
+    # Întrebarea nouă se citește înainte de afișare, ca exemplele să dispară imediat.
+    # Câmpul rămâne fixat jos indiferent de poziția apelului.
+    question = st.chat_input("Scrie o întrebare despre legislație")
+    question = question or st.session_state.pop("pending", None)
 
     messages = st.session_state.setdefault("messages", [])
-    if not messages:
-        st.markdown("**Exemple de întrebări:**")
-        for example in EXAMPLES:
-            if st.button(example, use_container_width=True):
-                st.session_state.pending = example
-                st.rerun()
+    if not messages and not question:
+        html('<div class="lr-label">Exemple</div>')
+        with st.container(key="examples"):
+            for example in EXAMPLES:
+                if st.button(example, use_container_width=True):
+                    st.session_state.pending = example
+                    st.rerun()
 
     for message in messages:
-        with st.chat_message(message["role"]):
-            if message["role"] == "user":
-                st.markdown(message["content"])
-            else:
-                render_answer(message["content"])
+        html(f'<div class="lr-question">{escape(message["question"])}</div>')
+        render_answer(message["answer"])
 
-    question = st.chat_input("Scrie o întrebare despre legislație…")
-    question = question or st.session_state.pop("pending", None)
     if not question:
         return
 
-    messages.append({"role": "user", "content": question})
-    with st.chat_message("user"):
-        st.markdown(question)
-    with st.chat_message("assistant"):
-        with st.spinner("Caut în legi și formulez răspunsul…"):
-            answer = rag.ask(question, laws=laws or None)
-        render_answer(answer)
-    messages.append({"role": "assistant", "content": answer})
+    html(f'<div class="lr-question">{escape(question)}</div>')
+    with st.spinner("Se caută în legi și se formulează răspunsul…"):
+        answer = rag.ask(question, laws=laws or None)
+    render_answer(answer)
+    messages.append({"question": question, "answer": answer})
 
 
 main()

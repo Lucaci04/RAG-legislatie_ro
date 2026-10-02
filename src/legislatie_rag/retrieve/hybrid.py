@@ -140,7 +140,7 @@ def main() -> None:
     retriever.search(query)  # încălzește modelele (prima rulare pe MPS e lentă)
     start = time.perf_counter()
     hits = retriever.search(query)
-    print(f"❓ {query}   ({(time.perf_counter() - start) * 1000:.0f} ms)\n")
+    print(f"Întrebare: {query}   ({(time.perf_counter() - start) * 1000:.0f} ms)\n")
     for i, hit in enumerate(hits, start=1):
         tag = "explicit" if hit.explicit else f"{hit.score:.2f}"
         print(f"{i}. {hit.citation:<28} [{tag}] via {', '.join(sorted(hit.sources))}")

@@ -116,7 +116,7 @@ def main() -> None:
         articles = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
         chunks = [c for a in articles for c in chunk_article(a)]
         all_chunks.extend(chunks)
-        print(f"✓ {law.short_ref:<16} {len(chunks):>4} chunk-uri")
+        print(f"  {law.short_ref:<16} {len(chunks):>4} chunk-uri")
 
     out = CHUNKS_PATH
     with out.open("w", encoding="utf-8") as f:

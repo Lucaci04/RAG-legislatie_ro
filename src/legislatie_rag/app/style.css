@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap");
+
+:root {
+  --lr-ink: #1c1b19;
+  --lr-muted: #6b6860;
+  --lr-faint: #8d8a81;
+  --lr-rule: #e4e1d8;
+  --lr-paper: #fbfaf7;
+  --lr-panel: #f3f1eb;
+  --lr-accent: #1f3a5f;
+  --lr-serif: "Source Serif 4", Georgia, serif;
+  --lr-sans: "Inter", -apple-system, "Segoe UI", sans-serif;
+}
+
+html, body, [data-testid="stAppViewContainer"], [data-testid="stSidebar"],
+button, input, textarea, [data-testid="stMarkdownContainer"] {
+  font-family: var(--lr-sans);
+}
+
+/* Bara de sus a Streamlit: fără decor și fără butoane. */
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stDecoration"], [data-testid="stToolbar"], #MainMenu, footer { display: none; }
+
+.block-container { padding-top: 2.5rem; padding-bottom: 5rem; max-width: 46rem; }
+
+/* Tipografie */
+h1, h2, h3, .lr-title, .lr-question {
+  font-family: var(--lr-serif);
+  color: var(--lr-ink);
+  letter-spacing: -0.01em;
+}
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li { font-size: 0.97rem; line-height: 1.65; color: var(--lr-ink); }
+[data-testid="stMarkdownContainer"] h3 { font-size: 1.15rem; margin-top: 1.4rem; }
+[data-testid="stMarkdownContainer"] strong { font-weight: 600; }
+[data-testid="stMarkdownContainer"] table { font-size: 0.9rem; border-collapse: collapse; }
+[data-testid="stMarkdownContainer"] th {
+  font-weight: 600; text-align: left; background: var(--lr-panel);
+  border-bottom: 1px solid var(--lr-rule);
+}
+[data-testid="stMarkdownContainer"] td, [data-testid="stMarkdownContainer"] th {
+  padding: 0.5rem 0.75rem; border-color: var(--lr-rule);
+}
+
+.lr-overline {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--lr-faint); margin-bottom: 0.4rem;
+}
+.lr-title { font-size: 2.4rem; font-weight: 600; line-height: 1.1; margin: 0 0 0.5rem; padding: 0; }
+.lr-lead { color: var(--lr-muted); font-size: 1.02rem; line-height: 1.6; margin-bottom: 1.4rem; }
+.lr-label {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--lr-faint); margin: 1.2rem 0 0.4rem;
+}
+
+/* Exemplele de întrebări: rânduri discrete, aliniate la stânga. */
+.st-key-examples button {
+  justify-content: flex-start; text-align: left; background: transparent;
+  border: none; border-bottom: 1px solid var(--lr-rule); border-radius: 0;
+  padding: 0.6rem 0.25rem; color: var(--lr-ink); font-size: 0.97rem;
+}
+.st-key-examples button > div, .st-key-examples button [data-testid="stMarkdownContainer"] {
+  justify-content: flex-start; width: 100%;
+}
+.st-key-examples button p { text-align: left; font-size: 0.97rem; }
+.st-key-examples button:hover { color: var(--lr-accent); background: transparent; }
+.st-key-examples [data-testid="stVerticalBlock"] { gap: 0; }
+
+/* Conversația */
+.lr-question {
+  font-size: 1.45rem; font-weight: 500; line-height: 1.35;
+  padding-top: 2rem; margin: 0 0 1rem; border-top: 1px solid var(--lr-rule);
+}
+.lr-notice {
+  border-left: 2px solid var(--lr-accent); background: var(--lr-panel);
+  padding: 0.8rem 1rem; color: var(--lr-ink); font-size: 0.95rem; margin-bottom: 1rem;
+}
+.lr-meta { font-size: 0.8rem; color: var(--lr-faint); margin: 0.9rem 0 1.5rem; }
+.lr-crumb { font-size: 0.8rem; color: var(--lr-faint); margin-bottom: 0.6rem; }
+.lr-source-foot { font-size: 0.8rem; color: var(--lr-faint); margin-top: 0.8rem; }
+.lr-source-foot a { color: var(--lr-accent); }
+.lr-other { font-size: 0.88rem; color: var(--lr-muted); margin: 0.35rem 0; }
+
+/* Sursele: carduri cu chenar fin. */
+[data-testid="stExpander"] details {
+  border: 1px solid var(--lr-rule); border-radius: 4px; background: #fff;
+}
+[data-testid="stExpander"] summary { font-size: 0.92rem; padding: 0.7rem 0.9rem; }
+[data-testid="stExpander"] summary:hover { color: var(--lr-accent); }
+
+/* Bara laterală */
+[data-testid="stSidebar"] { border-right: 1px solid var(--lr-rule); }
+.lr-side-title { font-family: var(--lr-serif); font-size: 1.5rem; font-weight: 600; margin: 0; }
+.lr-side-text { font-size: 0.88rem; color: var(--lr-muted); line-height: 1.55; }
+.lr-law { margin: 0 0 0.85rem; }
+.lr-law a { color: var(--lr-ink); text-decoration: none; font-size: 0.92rem; font-weight: 500; }
+.lr-law a:hover { color: var(--lr-accent); text-decoration: underline; }
+.lr-law span { display: block; font-size: 0.78rem; color: var(--lr-faint); margin-top: 0.1rem; }
+.lr-disclaimer { font-size: 0.78rem; color: var(--lr-faint); line-height: 1.5; }
+
+/* Câmpul de întrebare */
+[data-testid="stChatInput"] { border-radius: 4px; }

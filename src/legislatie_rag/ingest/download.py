@@ -101,7 +101,7 @@ def main() -> None:
         for law in LAWS:
             meta = download_law(law, session)
             print(
-                f"✓ {meta['short_ref']:<16} {meta['n_articles']:>4} articole  "
+                f"  {meta['short_ref']:<16} {meta['n_articles']:>4} articole  "
                 f"consolidare: {meta['consolidation_date'] or '-'}  (doc {meta['doc_id']})"
             )
 

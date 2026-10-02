@@ -228,9 +228,9 @@ def main() -> None:
         ]
 
     (DOCS_DIR / "results.md").write_text("\n".join(md), encoding="utf-8")
-    print(f"✓ {DOCS_DIR / 'results.md'}")
+    print(f"  {DOCS_DIR / 'results.md'}")
     for img in sorted(IMG_DIR.glob("*.png")):
-        print(f"✓ {img}")
+        print(f"  {img}")
 
 
 if __name__ == "__main__":
