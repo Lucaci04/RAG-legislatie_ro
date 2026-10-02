@@ -127,7 +127,7 @@
 {"variant": "Hibrid (RRF)", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:150", "constitutia:151", "constitutia:155", "constitutia:156"]}
 {"variant": "Hibrid (RRF)", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:37", "constitutia:83", "constitutia:85", "constitutia:80"]}
 {"variant": "Hibrid (RRF)", "id": "cr-viteza-localitate", "type": "natural", "rank": 2, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:6", "codul_rutier:53", "codul_rutier:41"]}
-{"variant": "Hibrid (RRF)", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:6", "codul_rutier:48", "codul_rutier:108"]}
+{"variant": "Hibrid (RRF)", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:6", "codul_rutier:48", "codul_rutier:74"]}
 {"variant": "Hibrid (RRF)", "id": "cr-rosu", "type": "natural", "rank": 4, "top5": ["codul_rutier:101", "codul_rutier:102", "codul_rutier:98", "codul_rutier:100", "codul_muncii:260"]}
 {"variant": "Hibrid (RRF)", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:108", "codul_rutier:96", "codul_rutier:111", "codul_rutier:104"]}
 {"variant": "Hibrid (RRF)", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:37", "codul_rutier:59", "codul_rutier:62", "codul_rutier:61"]}
@@ -178,7 +178,7 @@
 {"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-rosu", "type": "natural", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:100", "codul_rutier:102", "codul_rutier:98", "codul_rutier:37"]}
 {"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:108", "codul_rutier:111", "codul_rutier:98", "codul_rutier:96"]}
 {"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:37", "codul_rutier:61", "codul_rutier:62", "codul_rutier:59"]}
-{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64", "codul_rutier:108", "codul_rutier:64^1"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64", "codul_rutier:64^1", "codul_rutier:108"]}
 {"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-forme", "type": "natural", "rank": 10, "top5": ["legea_societatilor:44", "legea_societatilor:251^20", "legea_societatilor:251^59", "legea_societatilor:8", "legea_societatilor:7"]}
 {"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:207", "legea_societatilor:208", "legea_societatilor:21"]}
 {"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:69^1", "legea_societatilor:69", "legea_societatilor:32", "codul_muncii:172"]}
@@ -206,7 +206,7 @@
 {"variant": "Vectori + reranker", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:124", "codul_muncii:128", "codul_muncii:112"]}
 {"variant": "Vectori + reranker", "id": "inf-fara-contract", "type": "informal", "rank": 3, "top5": ["codul_muncii:82", "codul_muncii:104", "codul_muncii:16", "codul_muncii:27", "codul_muncii:14"]}
 {"variant": "Vectori + reranker", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
-{"variant": "Vectori + reranker", "id": "inf-telefon", "type": "informal", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:36", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
+{"variant": "Vectori + reranker", "id": "inf-telefon", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:101", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
 {"variant": "Vectori + reranker", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:51", "codul_rutier:108", "codul_rutier:35", "codul_rutier:6"]}
 {"variant": "Vectori + reranker", "id": "ref-cm-41", "type": "explicit_ref", "rank": 2, "top5": ["constitutia:41", "codul_muncii:41", "codul_muncii:4", "codul_muncii:5", "codul_muncii:1"]}
 {"variant": "Vectori + reranker", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:4", "constitutia:1", "constitutia:16", "constitutia:15"]}
@@ -229,7 +229,7 @@
 {"variant": "Vectori + reranker", "id": "ls-forme", "type": "natural", "rank": 5, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:42", "legea_societatilor:251^20", "legea_societatilor:2"]}
 {"variant": "Vectori + reranker", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:91", "legea_societatilor:93", "legea_societatilor:22"]}
 {"variant": "Vectori + reranker", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:67", "legea_societatilor:69^1", "legea_societatilor:201", "legea_societatilor:32"]}
-{"variant": "Vectori + reranker", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:228"]}
+{"variant": "Vectori + reranker", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:228", "legea_societatilor:233"]}
 {"variant": "Vectori + reranker", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:193", "legea_societatilor:82"]}
 {"variant": "Vectori + reranker", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:208", "legea_societatilor:9", "legea_societatilor:9^1", "legea_societatilor:93"]}
 {"variant": "Vectori + reranker", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}
@@ -253,7 +253,7 @@
 {"variant": "Hibrid + reranker", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:124", "codul_muncii:128", "codul_muncii:118^1"]}
 {"variant": "Hibrid + reranker", "id": "inf-fara-contract", "type": "informal", "rank": 4, "top5": ["codul_muncii:82", "codul_muncii:104", "codul_muncii:91", "codul_muncii:16", "codul_muncii:74"]}
 {"variant": "Hibrid + reranker", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:260"]}
-{"variant": "Hibrid + reranker", "id": "inf-telefon", "type": "informal", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:36", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
+{"variant": "Hibrid + reranker", "id": "inf-telefon", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:101", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
 {"variant": "Hibrid + reranker", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:82", "codul_rutier:51", "codul_rutier:108", "codul_rutier:35"]}
 {"variant": "Hibrid + reranker", "id": "ref-cm-41", "type": "explicit_ref", "rank": 2, "top5": ["constitutia:41", "codul_muncii:41", "codul_muncii:4", "codul_muncii:5", "codul_muncii:1"]}
 {"variant": "Hibrid + reranker", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:4", "constitutia:16", "constitutia:15", "constitutia:133"]}
@@ -276,7 +276,7 @@
 {"variant": "Hibrid + reranker", "id": "ls-forme", "type": "natural", "rank": 5, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:290", "legea_societatilor:251^20", "legea_societatilor:2"]}
 {"variant": "Hibrid + reranker", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:153^24", "legea_societatilor:91", "legea_societatilor:93"]}
 {"variant": "Hibrid + reranker", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:67", "legea_societatilor:69^1", "legea_societatilor:153^24", "legea_societatilor:201"]}
-{"variant": "Hibrid + reranker", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:228"]}
+{"variant": "Hibrid + reranker", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:228", "legea_societatilor:233"]}
 {"variant": "Hibrid + reranker", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:15", "legea_societatilor:193"]}
 {"variant": "Hibrid + reranker", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:153^24", "legea_societatilor:208", "legea_societatilor:9", "legea_societatilor:9^1"]}
 {"variant": "Hibrid + reranker", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}
@@ -300,7 +300,7 @@
 {"variant": "Hibrid + reranker + referințe", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:124", "codul_muncii:128", "codul_muncii:118^1"]}
 {"variant": "Hibrid + reranker + referințe", "id": "inf-fara-contract", "type": "informal", "rank": 4, "top5": ["codul_muncii:82", "codul_muncii:104", "codul_muncii:91", "codul_muncii:16", "codul_muncii:74"]}
 {"variant": "Hibrid + reranker + referințe", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:260"]}
-{"variant": "Hibrid + reranker + referințe", "id": "inf-telefon", "type": "informal", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:36", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-telefon", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:101", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
 {"variant": "Hibrid + reranker + referințe", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:82", "codul_rutier:51", "codul_rutier:108", "codul_rutier:35"]}
 {"variant": "Hibrid + reranker + referințe", "id": "ref-cm-41", "type": "explicit_ref", "rank": 1, "top5": ["codul_muncii:41", "constitutia:41", "codul_muncii:4", "codul_muncii:5", "codul_muncii:1"]}
 {"variant": "Hibrid + reranker + referințe", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:4", "constitutia:16", "constitutia:15", "constitutia:133"]}
@@ -323,7 +323,7 @@
 {"variant": "Hibrid + reranker + referințe", "id": "ls-forme", "type": "natural", "rank": 5, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:290", "legea_societatilor:251^20", "legea_societatilor:2"]}
 {"variant": "Hibrid + reranker + referințe", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:153^24", "legea_societatilor:91", "legea_societatilor:93"]}
 {"variant": "Hibrid + reranker + referințe", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:67", "legea_societatilor:69^1", "legea_societatilor:153^24", "legea_societatilor:201"]}
-{"variant": "Hibrid + reranker + referințe", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:228"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:228", "legea_societatilor:233"]}
 {"variant": "Hibrid + reranker + referințe", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:15", "legea_societatilor:193"]}
 {"variant": "Hibrid + reranker + referințe", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:153^24", "legea_societatilor:208", "legea_societatilor:9", "legea_societatilor:9^1"]}
 {"variant": "Hibrid + reranker + referințe", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}

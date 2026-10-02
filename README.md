@@ -22,6 +22,7 @@ uv run python -m legislatie_rag.ingest.chunk      # articole → chunk-uri pentr
 uv run python -m legislatie_rag.index.vector      # embeddings bge-m3 → Chroma (incremental)
 uv run python -m legislatie_rag.retrieve.hybrid "Câte zile de concediu am?"   # doar căutare
 uv run python -m legislatie_rag.generate.answer "Câte zile de concediu am?"   # răspuns complet
+uv run streamlit run src/legislatie_rag/app/streamlit_app.py                  # interfața web
 uv run pytest
 ```
 

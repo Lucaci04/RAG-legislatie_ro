@@ -9,13 +9,17 @@ import sys
 import time
 from dataclasses import dataclass, field
 
-from legislatie_rag.generate.llm import LLM, get_llm
+from legislatie_rag.generate.llm import LLM, LLMUnavailableError, get_llm
 from legislatie_rag.generate.prompt import NO_SOURCES_ANSWER, SYSTEM_PROMPT, build_prompt
 from legislatie_rag.retrieve.hybrid import ArticleHit, Retriever
 
 _SOURCE_MARKER = re.compile(r"\[(\d+)\]")
 
 DISCLAIMER = "Informație orientativă pe baza textului legii, nu consultanță juridică."
+LLM_UNAVAILABLE_ANSWER = (
+    "Modelul de limbaj nu este disponibil momentan (limită de utilizare sau suprasolicitare). "
+    "Mai jos sunt articolele de lege găsite pentru întrebarea ta."
+)
 
 
 @dataclass
@@ -30,6 +34,8 @@ class Answer:
     model: str | None = None
     retrieval_ms: float = 0.0
     generation_ms: float = 0.0
+    llm_error: bool = False
+    """Generarea a eșuat; `sources` conține totuși articolele găsite."""
 
     @property
     def cited_sources(self) -> list[ArticleHit]:
@@ -59,7 +65,12 @@ class RAG:
             return Answer(question, NO_SOURCES_ANSWER, [], retrieval_ms=retrieval_ms)
 
         start = time.perf_counter()
-        completion = self.llm.generate(SYSTEM_PROMPT, build_prompt(question, hits))
+        try:
+            completion = self.llm.generate(SYSTEM_PROMPT, build_prompt(question, hits))
+        except LLMUnavailableError:
+            return Answer(
+                question, LLM_UNAVAILABLE_ANSWER, hits, retrieval_ms=retrieval_ms, llm_error=True
+            )
         generation_ms = (time.perf_counter() - start) * 1000
 
         cited, invalid = check_citations(completion.text, len(hits))

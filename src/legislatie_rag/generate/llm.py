@@ -37,6 +37,11 @@ class LLM(Protocol):
     def generate(self, system: str, prompt: str) -> Completion: ...
 
 
+def is_daily_quota_error(error: Exception) -> bool:
+    """429 din cauza limitei zilnice (tier gratuit: 20 de cereri/zi/model)."""
+    return "PerDay" in str(error)
+
+
 class LLMUnavailableError(RuntimeError):
     """Furnizorul nu a răspuns nici după reîncercări, pe niciun model."""
 
@@ -101,6 +106,9 @@ class GeminiLLM:
                     if isinstance(e, errors.APIError) and e.code not in RETRYABLE_CODES:
                         raise
                     last_error = e
+                    if is_daily_quota_error(e):
+                        log.warning("%s: limita zilnică atinsă", model)
+                        break  # nu se resetează în câteva secunde: trecem direct la rezervă
                     delay = self.retry_base_delay * 2**attempt
                     reason = f"{e.code} {e.status}" if isinstance(e, errors.APIError) else "timeout"
                     log.warning("%s: %s, reîncerc în %ss", model, reason, delay)

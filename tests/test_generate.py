@@ -70,6 +70,19 @@ def test_rag_without_sources_does_not_call_llm():
     assert llm.calls == []
 
 
+def test_rag_keeps_sources_when_llm_unavailable():
+    class DownLLM:
+        def generate(self, system, prompt):
+            raise LLMUnavailableError("indisponibil")
+
+    hits = [make_hit("145", "20 de zile")]
+    answer = RAG(retriever=FakeRetriever(hits), llm=DownLLM()).ask("Câte zile?")
+
+    assert answer.llm_error
+    assert answer.sources == hits
+    assert answer.cited == []
+
+
 def _api_error(code: int) -> errors.APIError:
     return errors.APIError(code, {"error": {"code": code, "status": "X", "message": "x"}})
 
@@ -100,6 +113,23 @@ def test_gemini_retries_then_falls_back(monkeypatch):
     assert completion.text == "răspuns"
     assert completion.model == "rezerva"
     assert called == ["principal", "principal", "rezerva"]
+
+
+def test_gemini_skips_retries_on_daily_quota(monkeypatch):
+    daily = errors.APIError(
+        429,
+        {
+            "error": {
+                "code": 429,
+                "status": "RESOURCE_EXHAUSTED",
+                "message": "quotaId: GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            }
+        },
+    )
+    llm, called = _gemini_with([daily, "răspuns"], monkeypatch)
+
+    assert llm.generate("sistem", "prompt").model == "rezerva"
+    assert called == ["principal", "rezerva"]
 
 
 def test_gemini_does_not_retry_client_errors(monkeypatch):

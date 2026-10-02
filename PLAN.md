@@ -112,17 +112,17 @@ Mai târziu: Codul Civil și Codul Fiscal (mari, cu structură complexă).
 - [x] Disclaimer: „Informație orientativă, nu consultanță juridică”
 
 ### Faza 6: Evaluare *(~2 zile, apoi continuu)*
-- [ ] Set de **40–50 de întrebări** scrise manual, cu articolul corect pentru fiecare:
+- [x] Set de **40–50 de întrebări** scrise manual, cu articolul corect pentru fiecare:
   - întrebări directe („Ce prevede art. 41 din Codul Muncii?”)
   - întrebări în limbaj natural („Mă poate concedia angajatorul cât sunt în concediu medical?”)
   - întrebări fără răspuns în date (pentru a testa refuzul)
-- [ ] Metrici de retrieval: **Recall@5** și **MRR** (s-a găsit articolul corect?)
-- [ ] Metrici de răspuns: corectitudine și citare corectă (LLM ca judecător, plus verificare manuală pe un eșantion)
-- [ ] Un singur script `eval/run.py` care produce un raport, rulat după fiecare schimbare
+- [x] Metrici de retrieval: **Recall@5** și **MRR** (s-a găsit articolul corect?)
+- [ ] *(în pauză: limita gratuită Gemini, 20 cereri/zi/model; scriptul e reluabil)* Metrici de răspuns: corectitudine și citare corectă (LLM ca judecător, plus verificare manuală pe un eșantion)
+- [x] Un singur script `eval/run.py` care produce un raport, rulat după fiecare schimbare
 
 ### Faza 7: Interfață *(~1–2 zile)*
-- [ ] CLI: `python -m src.app.cli "întrebarea mea"`
-- [ ] Streamlit: chat, surse expandabile, filtru pe lege
+- [x] CLI: `python -m src.app.cli "întrebarea mea"`
+- [x] Streamlit: chat, surse expandabile, filtru pe lege
 
 ### Faza 8: Îmbunătățiri *(după MVP, în funcție de rezultatele evaluării)*
 - [ ] Reformularea întrebării (query rewriting) pentru întrebări vagi

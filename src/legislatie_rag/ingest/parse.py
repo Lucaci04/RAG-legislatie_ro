@@ -19,7 +19,9 @@ BLOCK_CLASSES = ["S_ALN", "S_LIT", "S_PCT", "S_LIN", "S_PAR"]
 
 _AMENDMENT_NOTE = re.compile(r"^\(la (data de )?\d{2}-\d{2}-\d{4}")
 _ARTICLE_TITLE = re.compile(r"^Articolul\s+(.+)$")
-_ABROGATED = re.compile(r"^(\(\d+(\^\d+)?\)\s*|[a-z](\^\d+)?\)\s*|\d+\.\s*)?Abrogat[ăe]?\.?$")
+_ABROGATED = re.compile(
+    r"^(\(\d+(\^\d+)?\)\s*|[a-z](\^\d+)?\)\s*|\d+\.\s*)?Abrogat[ăe]?\.?$", re.IGNORECASE
+)
 _WHITESPACE = re.compile(r"[ \t\r\f\v\xa0]+")
 # Diacritice cu sedilă (ş, ţ), folosite inconsecvent pe portal → forma corectă cu virgulă.
 _DIACRITICS = str.maketrans("şţŞŢ", "șțȘȚ")
@@ -135,6 +137,8 @@ def parse_article(tag: Tag, meta: dict) -> Article:
     abrogated = not units or all(_ABROGATED.match(u) for u in units)
     if not abrogated:
         units = [u for u in units if not _ABROGATED.match(u)]
+        # Și subdiviziunile abrogate din interiorul alineatelor („b) abrogată.”).
+        units = ["\n".join(ln for ln in u.split("\n") if not _ABROGATED.match(ln)) for u in units]
 
     references = sorted({lgi.get_text(" ", strip=True) for lgi in body.select(".S_LGI")})
 

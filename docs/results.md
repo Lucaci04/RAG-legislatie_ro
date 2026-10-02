@@ -10,13 +10,13 @@ Set de evaluare: **52 de întrebări** ([data/eval/questions.jsonl](../data/eval
 
 | Variantă | Recall@1 | Recall@3 | Recall@5 | MRR | Latență |
 |---|---|---|---|---|---|
-| BM25 | 49% | 68% | 74% | 0.602 | 0 ms |
-| Vectori (bge-m3) | 81% | 91% | 94% | 0.863 | 19 ms |
-| Hibrid (RRF) | 64% | 77% | 85% | 0.732 | 20 ms |
+| BM25 | 49% | 68% | 74% | 0.602 | 1 ms |
+| Vectori (bge-m3) | 81% | 91% | 94% | 0.863 | 20 ms |
+| Hibrid (RRF) | 64% | 77% | 85% | 0.732 | 19 ms |
 | Hibrid ponderat (BM25 × 0.3) | 70% | 85% | 89% | 0.788 | 20 ms |
-| Vectori + reranker | 83% | 96% | 98% | 0.894 | 1068 ms |
-| Hibrid + reranker | 85% | 96% | 100% | 0.914 | 1091 ms |
-| Hibrid + reranker + referințe | 87% | 96% | 100% | 0.924 | 1081 ms |
+| Vectori + reranker | 85% | 96% | 98% | 0.905 | 1079 ms |
+| Hibrid + reranker | 87% | 96% | 100% | 0.924 | 1100 ms |
+| Hibrid + reranker + referințe | 89% | 96% | 100% | 0.935 | 1094 ms |
 
 **Concluzii**
 

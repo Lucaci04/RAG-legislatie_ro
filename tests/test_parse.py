@@ -83,6 +83,17 @@ def test_abrogated_article(articles):
     assert not articles["10"].abrogated
 
 
+def test_abrogated_letters_removed_inside_unit():
+    body = (
+        '<span class="S_ALN"><span class="S_ALN_TTL">(1)</span> <span class="S_ALN_BDY">Intro:'
+        '<span class="S_LIT"><span class="S_LIT_TTL">a)</span> <span class="S_LIT_BDY">fapta A;'
+        '</span></span><span class="S_LIT"><span class="S_LIT_TTL">b)</span> '
+        '<span class="S_LIT_BDY">abrogată.</span></span></span></span>'
+    )
+    [parsed] = parse_law(article("20", body), META)
+    assert parsed.units == ["(1) Intro:\na) fapta A;"]
+
+
 def test_marginal_title_extracted_from_first_paragraph(articles):
     assert articles["12"].title == "Suveranitatea"
     assert articles["12"].units == ["(1) Puterea aparține poporului."]
