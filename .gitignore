@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrete
+.env
+
+# Date generate (se pot regenera cu scripturile din proiect)
+data/raw/
+data/processed/
+data/index/
+
+# Modele descărcate
+models/
+
+# macOS
+.DS_Store

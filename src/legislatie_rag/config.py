@@ -1,0 +1,32 @@
+"""Configurație centrală: căi și lista legilor indexate."""
+
+from dataclasses import dataclass
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = ROOT_DIR / "data"
+RAW_DIR = DATA_DIR / "raw"
+PROCESSED_DIR = DATA_DIR / "processed"
+
+PORTAL_URL = "https://legislatie.just.ro/Public/DetaliiDocument/{doc_id}"
+
+
+@dataclass(frozen=True)
+class Law:
+    slug: str
+    name: str
+    short_ref: str
+    seed_id: int
+    """ID-ul unei pagini a legii pe legislatie.just.ro.
+
+    Nu trebuie să fie ultima versiune: downloader-ul urmează istoricul
+    consolidărilor și descarcă automat forma cea mai recentă.
+    """
+
+
+LAWS: list[Law] = [
+    Law("constitutia", "Constituția României", "Constituția", 47355),
+    Law("codul_muncii", "Codul muncii", "Legea 53/2003", 309240),
+    Law("codul_rutier", "Circulația pe drumurile publice", "OUG 195/2002", 84237),
+    Law("legea_societatilor", "Legea societăților", "Legea 31/1990", 169688),
+]
