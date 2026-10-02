@@ -85,13 +85,13 @@ Mai târziu: Codul Civil și Codul Fiscal (mari, cu structură complexă).
 - [x] Rate limiting de 1–2 secunde între cereri, user-agent identificabil
 
 ### Faza 2: Parsare și chunking *(~2 zile)*
-- [ ] Extragerea ierarhiei: Titlu → Capitol → Secțiune → Articol → Alineat
-- [ ] Un chunk pe articol. Dacă articolul depășește ~800 de tokeni, se împarte pe alineate
-- [ ] Fiecare chunk primește ca prefix contextul ierarhic, ca embedding-ul să „știe” unde se află:
+- [x] Extragerea ierarhiei: Titlu → Capitol → Secțiune → Articol → Alineat
+- [x] Un chunk pe articol. Dacă articolul depășește ~800 de tokeni, se împarte pe alineate
+- [x] Fiecare chunk primește ca prefix contextul ierarhic, ca embedding-ul să „știe” unde se află:
   `Codul Muncii > Titlul III > Capitolul II > Art. 145`
-- [ ] Metadate: `lege`, `articol`, `alineat`, `capitol`, `data_versiunii`, `url`
-- [ ] Eliminarea zgomotului: note de subsol cu modificări, „(la data ... a fost modificat de ...)”
-- [ ] Teste: numărul de articole extrase corespunde realității pentru fiecare lege
+- [x] Metadate: `lege`, `articol`, `alineat`, `capitol`, `data_versiunii`, `url`
+- [x] Eliminarea zgomotului: note de subsol cu modificări, „(la data ... a fost modificat de ...)”
+- [x] Teste: numărul de articole extrase corespunde realității pentru fiecare lege
 
 ### Faza 3: Indexare *(~1 zi)*
 - [ ] Embeddings cu `bge-m3` și salvare în Chroma

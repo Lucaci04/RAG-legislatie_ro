@@ -16,6 +16,8 @@ Asistent care răspunde la întrebări despre legislația românească pe baza t
 ```bash
 uv sync
 uv run python -m legislatie_rag.ingest.download   # descarcă forma consolidată a legilor
+uv run python -m legislatie_rag.ingest.parse      # HTML → articole structurate
+uv run python -m legislatie_rag.ingest.chunk      # articole → chunk-uri pentru indexare
 uv run pytest
 ```
 
