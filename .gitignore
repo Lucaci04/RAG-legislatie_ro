@@ -2,7 +2,8 @@
 __pycache__/
 *.py[cod]
 .venv
-.venv.nosync/   # venv-ul real; .nosync îl exclude din iCloud
+# venv-ul real; sufixul .nosync îl exclude din sincronizarea iCloud
+.venv.nosync/
 .pytest_cache/
 .ruff_cache/
 
