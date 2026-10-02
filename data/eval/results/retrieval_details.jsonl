@@ -1,0 +1,329 @@
+{"variant": "BM25", "id": "cm-concediu", "type": "natural", "rank": 2, "top5": ["codul_muncii:148", "codul_muncii:145", "codul_muncii:150", "codul_muncii:147", "codul_muncii:144"]}
+{"variant": "BM25", "id": "cm-concediere-medical", "type": "natural", "rank": null, "top5": ["codul_muncii:150", "codul_muncii:147^1", "codul_muncii:145", "codul_muncii:148", "codul_muncii:157"]}
+{"variant": "BM25", "id": "cm-varsta", "type": "natural", "rank": null, "top5": ["codul_muncii:202", "constitutia:55", "codul_muncii:124", "codul_muncii:56", "codul_muncii:128"]}
+{"variant": "BM25", "id": "cm-contract-scris", "type": "natural", "rank": null, "top5": ["codul_muncii:278^1", "legea_societatilor:170", "codul_muncii:51", "legea_societatilor:98", "codul_muncii:27"]}
+{"variant": "BM25", "id": "cm-proba", "type": "natural", "rank": 2, "top5": ["codul_muncii:32", "codul_muncii:31", "codul_muncii:97", "codul_muncii:33", "codul_muncii:75"]}
+{"variant": "BM25", "id": "cm-modificare", "type": "natural", "rank": null, "top5": ["codul_muncii:180", "codul_muncii:45", "codul_muncii:189", "codul_muncii:222", "codul_muncii:254"]}
+{"variant": "BM25", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "legea_societatilor:105", "codul_muncii:75", "codul_muncii:76", "constitutia:114"]}
+{"variant": "BM25", "id": "cm-program", "type": "natural", "rank": 7, "top5": ["codul_muncii:126", "codul_muncii:119", "codul_muncii:225", "codul_muncii:125", "codul_muncii:122"]}
+{"variant": "BM25", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:112", "legea_societatilor:202", "codul_muncii:113", "codul_muncii:278^2"]}
+{"variant": "BM25", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:114", "codul_muncii:278^1", "codul_muncii:105", "codul_muncii:25"]}
+{"variant": "BM25", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:271"]}
+{"variant": "BM25", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:138", "codul_muncii:135", "codul_muncii:136", "constitutia:41"]}
+{"variant": "BM25", "id": "cm-sarbatori", "type": "natural", "rank": 2, "top5": ["codul_muncii:142", "codul_muncii:139", "codul_muncii:143", "codul_muncii:141", "codul_muncii:140"]}
+{"variant": "BM25", "id": "cm-fara-plata", "type": "natural", "rank": null, "top5": ["codul_muncii:144", "codul_muncii:157", "codul_muncii:150", "codul_muncii:156", "codul_muncii:50"]}
+{"variant": "BM25", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:81", "codul_muncii:76", "codul_muncii:77", "codul_muncii:145"]}
+{"variant": "BM25", "id": "cm-somaj-tehnic", "type": "natural", "rank": null, "top5": ["codul_muncii:145", "codul_muncii:180", "codul_muncii:28", "codul_muncii:53^1", "codul_muncii:91"]}
+{"variant": "BM25", "id": "inf-concediu", "type": "informal", "rank": 2, "top5": ["codul_muncii:148", "codul_muncii:145", "codul_muncii:156", "codul_muncii:150", "codul_muncii:51"]}
+{"variant": "BM25", "id": "inf-15-ani", "type": "informal", "rank": 2, "top5": ["codul_muncii:88", "codul_muncii:13", "constitutia:49", "codul_muncii:234", "legea_societatilor:76"]}
+{"variant": "BM25", "id": "inf-fara-contract", "type": "informal", "rank": 5, "top5": ["codul_muncii:82", "codul_muncii:71", "codul_muncii:45", "codul_muncii:74", "codul_muncii:16"]}
+{"variant": "BM25", "id": "inf-noapte", "type": "informal", "rank": 2, "top5": ["codul_muncii:126", "codul_muncii:125", "codul_muncii:128", "codul_muncii:127", "codul_muncii:88"]}
+{"variant": "BM25", "id": "inf-telefon", "type": "informal", "rank": null, "top5": ["constitutia:28", "codul_rutier:12", "codul_rutier:77", "codul_rutier:71", "codul_rutier:11"]}
+{"variant": "BM25", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:35", "codul_rutier:12", "codul_rutier:82", "codul_rutier:108"]}
+{"variant": "BM25", "id": "ref-cm-41", "type": "explicit_ref", "rank": 1, "top5": ["codul_muncii:41", "legea_societatilor:41", "codul_rutier:6", "constitutia:41", "codul_muncii:50"]}
+{"variant": "BM25", "id": "ref-const-14", "type": "explicit_ref", "rank": 4, "top5": ["constitutia:100", "constitutia:75", "constitutia:99", "constitutia:14", "constitutia:133"]}
+{"variant": "BM25", "id": "ref-ls-183", "type": "explicit_ref", "rank": 5, "top5": ["codul_muncii:210", "codul_muncii:183", "codul_muncii:236", "legea_societatilor:39", "legea_societatilor:183"]}
+{"variant": "BM25", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:152", "constitutia:128", "constitutia:32", "constitutia:4"]}
+{"variant": "BM25", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "constitutia:55", "legea_societatilor:95", "legea_societatilor:128"]}
+{"variant": "BM25", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:81", "constitutia:85", "constitutia:103", "legea_societatilor:153^10"]}
+{"variant": "BM25", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:104", "constitutia:63", "codul_rutier:110", "constitutia:89"]}
+{"variant": "BM25", "id": "c-mandat-parlament", "type": "natural", "rank": 2, "top5": ["constitutia:38", "constitutia:63", "constitutia:64", "constitutia:37", "constitutia:89"]}
+{"variant": "BM25", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_rutier:112", "legea_societatilor:256", "codul_rutier:111", "constitutia:72"]}
+{"variant": "BM25", "id": "c-domiciliu", "type": "natural", "rank": null, "top5": ["legea_societatilor:81", "legea_societatilor:21", "codul_rutier:5", "legea_societatilor:256", "constitutia:85"]}
+{"variant": "BM25", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:150", "constitutia:156", "constitutia:151", "constitutia:11"]}
+{"variant": "BM25", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:37", "constitutia:83", "constitutia:133", "constitutia:38"]}
+{"variant": "BM25", "id": "cr-viteza-localitate", "type": "natural", "rank": 2, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:6", "codul_rutier:53", "codul_rutier:41"]}
+{"variant": "BM25", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:48", "codul_rutier:6", "codul_rutier:51"]}
+{"variant": "BM25", "id": "cr-rosu", "type": "natural", "rank": null, "top5": ["constitutia:12", "legea_societatilor:279", "codul_rutier:101", "codul_rutier:102", "codul_rutier:98"]}
+{"variant": "BM25", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:104", "codul_rutier:96", "codul_rutier:108", "codul_rutier:99"]}
+{"variant": "BM25", "id": "cr-pietoni", "type": "natural", "rank": 2, "top5": ["codul_rutier:59", "codul_rutier:72", "codul_rutier:37", "codul_rutier:62", "codul_rutier:101"]}
+{"variant": "BM25", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:74", "codul_muncii:124", "legea_societatilor:102", "codul_rutier:108"]}
+{"variant": "BM25", "id": "ls-forme", "type": "natural", "rank": null, "top5": ["constitutia:117", "legea_societatilor:44", "legea_societatilor:251^20", "legea_societatilor:290", "constitutia:126"]}
+{"variant": "BM25", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:56", "legea_societatilor:208", "legea_societatilor:207", "legea_societatilor:9"]}
+{"variant": "BM25", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:69^1", "legea_societatilor:103^1", "legea_societatilor:243", "codul_muncii:172"]}
+{"variant": "BM25", "id": "ls-dizolvare", "type": "natural", "rank": null, "top5": ["legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:232", "legea_societatilor:233", "legea_societatilor:237^1"]}
+{"variant": "BM25", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:15", "legea_societatilor:285", "legea_societatilor:229"]}
+{"variant": "BM25", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:56", "codul_muncii:164", "legea_societatilor:208", "legea_societatilor:153^24"]}
+{"variant": "BM25", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:76", "codul_muncii:75", "codul_muncii:164", "codul_muncii:77"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-concediu", "type": "natural", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:150", "codul_muncii:147", "codul_muncii:146", "codul_muncii:148"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-concediere-medical", "type": "natural", "rank": 1, "top5": ["codul_muncii:60", "codul_muncii:61", "codul_muncii:62", "codul_muncii:151", "codul_muncii:68"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-varsta", "type": "natural", "rank": 1, "top5": ["codul_muncii:13", "codul_muncii:124", "codul_muncii:128", "codul_muncii:33", "codul_muncii:202"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-contract-scris", "type": "natural", "rank": 1, "top5": ["codul_muncii:16", "codul_muncii:13", "codul_muncii:17", "codul_muncii:29", "codul_muncii:31"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-proba", "type": "natural", "rank": 2, "top5": ["codul_muncii:33", "codul_muncii:31", "codul_muncii:32", "codul_muncii:97", "codul_muncii:85"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-modificare", "type": "natural", "rank": 3, "top5": ["codul_muncii:48", "codul_muncii:42", "codul_muncii:41", "codul_muncii:170", "codul_muncii:264"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:71", "codul_muncii:73"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-program", "type": "natural", "rank": 1, "top5": ["codul_muncii:112", "codul_muncii:115", "codul_muncii:113", "codul_muncii:125", "codul_muncii:114"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:112", "codul_muncii:113", "codul_muncii:118", "codul_muncii:115"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:123", "codul_muncii:120", "codul_muncii:121", "codul_muncii:142"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:115", "codul_muncii:127"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:135", "codul_muncii:113", "codul_muncii:145", "codul_muncii:134"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-sarbatori", "type": "natural", "rank": 1, "top5": ["codul_muncii:139", "codul_muncii:142", "codul_muncii:152", "codul_muncii:141", "codul_muncii:143"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-fara-plata", "type": "natural", "rank": 1, "top5": ["codul_muncii:153", "codul_muncii:156", "codul_muncii:155", "codul_muncii:154", "codul_muncii:144"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:81", "codul_muncii:68"]}
+{"variant": "Vectori (bge-m3)", "id": "cm-somaj-tehnic", "type": "natural", "rank": 1, "top5": ["codul_muncii:53", "codul_muncii:53^1", "codul_muncii:260", "codul_muncii:52", "codul_muncii:96"]}
+{"variant": "Vectori (bge-m3)", "id": "inf-concediu", "type": "informal", "rank": null, "top5": ["codul_muncii:147^1", "codul_muncii:153^2", "codul_muncii:260", "codul_muncii:153^1", "codul_muncii:157"]}
+{"variant": "Vectori (bge-m3)", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "codul_muncii:124", "codul_muncii:128", "codul_muncii:265", "codul_muncii:15"]}
+{"variant": "Vectori (bge-m3)", "id": "inf-fara-contract", "type": "informal", "rank": 6, "top5": ["codul_muncii:27", "codul_muncii:82", "codul_muncii:48", "codul_muncii:83", "codul_muncii:30"]}
+{"variant": "Vectori (bge-m3)", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Vectori (bge-m3)", "id": "inf-telefon", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:44", "codul_rutier:54^1", "codul_rutier:109^3", "codul_rutier:38"]}
+{"variant": "Vectori (bge-m3)", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:72", "codul_rutier:51", "codul_rutier:35", "codul_rutier:54"]}
+{"variant": "Vectori (bge-m3)", "id": "ref-cm-41", "type": "explicit_ref", "rank": 3, "top5": ["constitutia:41", "codul_muncii:40", "codul_muncii:41", "codul_muncii:121", "codul_muncii:39"]}
+{"variant": "Vectori (bge-m3)", "id": "ref-const-14", "type": "explicit_ref", "rank": null, "top5": ["constitutia:16", "constitutia:146", "constitutia:15", "constitutia:4", "constitutia:44"]}
+{"variant": "Vectori (bge-m3)", "id": "ref-ls-183", "type": "explicit_ref", "rank": 2, "top5": ["legea_societatilor:187", "legea_societatilor:183", "legea_societatilor:185", "legea_societatilor:188", "legea_societatilor:294"]}
+{"variant": "Vectori (bge-m3)", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:128", "constitutia:12", "constitutia:32", "constitutia:137"]}
+{"variant": "Vectori (bge-m3)", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "codul_muncii:13", "constitutia:55", "codul_rutier:70"]}
+{"variant": "Vectori (bge-m3)", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:83", "constitutia:81", "constitutia:82", "constitutia:55"]}
+{"variant": "Vectori (bge-m3)", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:63", "constitutia:97", "constitutia:81", "constitutia:98"]}
+{"variant": "Vectori (bge-m3)", "id": "c-mandat-parlament", "type": "natural", "rank": 1, "top5": ["constitutia:63", "constitutia:62", "constitutia:66", "constitutia:61", "constitutia:89"]}
+{"variant": "Vectori (bge-m3)", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_rutier:103", "codul_rutier:109^3", "codul_muncii:265", "legea_societatilor:277"]}
+{"variant": "Vectori (bge-m3)", "id": "c-domiciliu", "type": "natural", "rank": 1, "top5": ["constitutia:27", "constitutia:23", "codul_rutier:23^1", "constitutia:26", "constitutia:44"]}
+{"variant": "Vectori (bge-m3)", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:147", "constitutia:27", "constitutia:151", "constitutia:30"]}
+{"variant": "Vectori (bge-m3)", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:82", "constitutia:37", "constitutia:85", "constitutia:62"]}
+{"variant": "Vectori (bge-m3)", "id": "cr-viteza-localitate", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:74", "codul_rutier:53", "codul_rutier:6"]}
+{"variant": "Vectori (bge-m3)", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:74", "codul_rutier:6", "codul_rutier:108"]}
+{"variant": "Vectori (bge-m3)", "id": "cr-rosu", "type": "natural", "rank": 2, "top5": ["codul_rutier:99", "codul_rutier:100", "codul_rutier:101", "codul_rutier:102", "codul_rutier:108"]}
+{"variant": "Vectori (bge-m3)", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:108", "codul_rutier:98", "codul_rutier:111", "codul_rutier:102"]}
+{"variant": "Vectori (bge-m3)", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:37", "codul_rutier:61", "codul_rutier:62", "codul_rutier:59"]}
+{"variant": "Vectori (bge-m3)", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:103", "codul_rutier:117", "codul_rutier:65", "codul_rutier:64"]}
+{"variant": "Vectori (bge-m3)", "id": "ls-forme", "type": "natural", "rank": 4, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:251^20", "legea_societatilor:2", "legea_societatilor:251^40"]}
+{"variant": "Vectori (bge-m3)", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:93", "legea_societatilor:9", "legea_societatilor:207", "legea_societatilor:212"]}
+{"variant": "Vectori (bge-m3)", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:69^1", "legea_societatilor:69", "legea_societatilor:67", "legea_societatilor:201"]}
+{"variant": "Vectori (bge-m3)", "id": "ls-dizolvare", "type": "natural", "rank": 1, "top5": ["legea_societatilor:227", "legea_societatilor:229", "legea_societatilor:228", "legea_societatilor:233", "legea_societatilor:237^2"]}
+{"variant": "Vectori (bge-m3)", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:226", "legea_societatilor:224", "legea_societatilor:193"]}
+{"variant": "Vectori (bge-m3)", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:207", "legea_societatilor:208", "legea_societatilor:9^1", "legea_societatilor:93"]}
+{"variant": "Vectori (bge-m3)", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:76", "codul_muncii:75", "codul_muncii:77", "codul_muncii:72"]}
+{"variant": "Hibrid (RRF)", "id": "cm-concediu", "type": "natural", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:150", "codul_muncii:148", "codul_muncii:147", "codul_muncii:144"]}
+{"variant": "Hibrid (RRF)", "id": "cm-concediere-medical", "type": "natural", "rank": 2, "top5": ["codul_muncii:151", "codul_muncii:60", "codul_muncii:152^1", "codul_muncii:145", "codul_muncii:157"]}
+{"variant": "Hibrid (RRF)", "id": "cm-varsta", "type": "natural", "rank": null, "top5": ["codul_muncii:124", "codul_muncii:202", "codul_muncii:128", "codul_muncii:83", "codul_rutier:20"]}
+{"variant": "Hibrid (RRF)", "id": "cm-contract-scris", "type": "natural", "rank": 4, "top5": ["codul_muncii:27", "codul_muncii:17", "codul_muncii:278^1", "codul_muncii:16", "legea_societatilor:170"]}
+{"variant": "Hibrid (RRF)", "id": "cm-proba", "type": "natural", "rank": 2, "top5": ["codul_muncii:32", "codul_muncii:31", "codul_muncii:33", "codul_muncii:97", "codul_muncii:85"]}
+{"variant": "Hibrid (RRF)", "id": "cm-modificare", "type": "natural", "rank": null, "top5": ["codul_muncii:45", "codul_muncii:46", "codul_muncii:21", "codul_muncii:6", "codul_muncii:17"]}
+{"variant": "Hibrid (RRF)", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "constitutia:114", "codul_muncii:77"]}
+{"variant": "Hibrid (RRF)", "id": "cm-program", "type": "natural", "rank": 1, "top5": ["codul_muncii:112", "codul_muncii:125", "codul_muncii:225", "codul_muncii:113", "codul_muncii:116"]}
+{"variant": "Hibrid (RRF)", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:112", "codul_muncii:113", "codul_muncii:116", "codul_muncii:115"]}
+{"variant": "Hibrid (RRF)", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:114", "codul_muncii:115", "codul_muncii:25", "codul_muncii:105"]}
+{"variant": "Hibrid (RRF)", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Hibrid (RRF)", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:135", "codul_muncii:138", "codul_muncii:113", "codul_muncii:133"]}
+{"variant": "Hibrid (RRF)", "id": "cm-sarbatori", "type": "natural", "rank": 2, "top5": ["codul_muncii:142", "codul_muncii:139", "codul_muncii:143", "codul_muncii:141", "codul_muncii:145"]}
+{"variant": "Hibrid (RRF)", "id": "cm-fara-plata", "type": "natural", "rank": 5, "top5": ["codul_muncii:144", "codul_muncii:156", "codul_muncii:150", "codul_muncii:157", "codul_muncii:153"]}
+{"variant": "Hibrid (RRF)", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:76", "codul_muncii:81", "codul_muncii:77", "codul_muncii:71"]}
+{"variant": "Hibrid (RRF)", "id": "cm-somaj-tehnic", "type": "natural", "rank": 6, "top5": ["codul_muncii:53^1", "codul_muncii:260", "codul_muncii:145", "codul_muncii:96", "codul_muncii:92"]}
+{"variant": "Hibrid (RRF)", "id": "inf-concediu", "type": "informal", "rank": 8, "top5": ["codul_muncii:157", "codul_muncii:147^1", "codul_muncii:156", "codul_muncii:144", "codul_muncii:51"]}
+{"variant": "Hibrid (RRF)", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "codul_muncii:124", "constitutia:49", "codul_muncii:128", "codul_rutier:70"]}
+{"variant": "Hibrid (RRF)", "id": "inf-fara-contract", "type": "informal", "rank": 2, "top5": ["codul_muncii:82", "codul_muncii:16", "codul_muncii:109", "codul_muncii:104", "codul_muncii:27"]}
+{"variant": "Hibrid (RRF)", "id": "inf-noapte", "type": "informal", "rank": 2, "top5": ["codul_muncii:126", "codul_muncii:125", "codul_muncii:128", "codul_muncii:127", "codul_muncii:278^2"]}
+{"variant": "Hibrid (RRF)", "id": "inf-telefon", "type": "informal", "rank": 9, "top5": ["codul_rutier:109^3", "codul_rutier:38", "codul_rutier:77", "codul_rutier:101", "codul_rutier:12"]}
+{"variant": "Hibrid (RRF)", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:35", "codul_rutier:54", "codul_rutier:51", "codul_rutier:72"]}
+{"variant": "Hibrid (RRF)", "id": "ref-cm-41", "type": "explicit_ref", "rank": 1, "top5": ["codul_muncii:41", "constitutia:41", "codul_muncii:5", "codul_muncii:121", "codul_muncii:114"]}
+{"variant": "Hibrid (RRF)", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:37", "constitutia:114", "constitutia:100", "constitutia:16"]}
+{"variant": "Hibrid (RRF)", "id": "ref-ls-183", "type": "explicit_ref", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:294", "legea_societatilor:188", "codul_muncii:1", "legea_societatilor:152^1"]}
+{"variant": "Hibrid (RRF)", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:128", "constitutia:32", "constitutia:152", "constitutia:4"]}
+{"variant": "Hibrid (RRF)", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "constitutia:55", "codul_rutier:70", "legea_societatilor:101"]}
+{"variant": "Hibrid (RRF)", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:81", "constitutia:82", "constitutia:103", "constitutia:85"]}
+{"variant": "Hibrid (RRF)", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:63", "constitutia:81", "constitutia:89", "constitutia:95"]}
+{"variant": "Hibrid (RRF)", "id": "c-mandat-parlament", "type": "natural", "rank": 1, "top5": ["constitutia:63", "constitutia:64", "constitutia:89", "constitutia:37", "constitutia:61"]}
+{"variant": "Hibrid (RRF)", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_rutier:111", "codul_rutier:104^1", "constitutia:27", "codul_muncii:114"]}
+{"variant": "Hibrid (RRF)", "id": "c-domiciliu", "type": "natural", "rank": 5, "top5": ["codul_rutier:5", "constitutia:44", "codul_rutier:39", "legea_societatilor:81", "constitutia:27"]}
+{"variant": "Hibrid (RRF)", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:150", "constitutia:151", "constitutia:155", "constitutia:156"]}
+{"variant": "Hibrid (RRF)", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:37", "constitutia:83", "constitutia:85", "constitutia:80"]}
+{"variant": "Hibrid (RRF)", "id": "cr-viteza-localitate", "type": "natural", "rank": 2, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:6", "codul_rutier:53", "codul_rutier:41"]}
+{"variant": "Hibrid (RRF)", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:6", "codul_rutier:48", "codul_rutier:108"]}
+{"variant": "Hibrid (RRF)", "id": "cr-rosu", "type": "natural", "rank": 4, "top5": ["codul_rutier:101", "codul_rutier:102", "codul_rutier:98", "codul_rutier:100", "codul_muncii:260"]}
+{"variant": "Hibrid (RRF)", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:108", "codul_rutier:96", "codul_rutier:111", "codul_rutier:104"]}
+{"variant": "Hibrid (RRF)", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:37", "codul_rutier:59", "codul_rutier:62", "codul_rutier:61"]}
+{"variant": "Hibrid (RRF)", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64", "codul_rutier:108", "codul_rutier:64^1"]}
+{"variant": "Hibrid (RRF)", "id": "ls-forme", "type": "natural", "rank": null, "top5": ["legea_societatilor:44", "legea_societatilor:251^20", "legea_societatilor:290", "legea_societatilor:251^59", "legea_societatilor:7"]}
+{"variant": "Hibrid (RRF)", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:207", "legea_societatilor:208", "legea_societatilor:210"]}
+{"variant": "Hibrid (RRF)", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:69^1", "codul_muncii:172", "legea_societatilor:32", "legea_societatilor:69"]}
+{"variant": "Hibrid (RRF)", "id": "ls-dizolvare", "type": "natural", "rank": 9, "top5": ["legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:233", "legea_societatilor:232", "legea_societatilor:228"]}
+{"variant": "Hibrid (RRF)", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:226", "legea_societatilor:15"]}
+{"variant": "Hibrid (RRF)", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:208", "legea_societatilor:207", "legea_societatilor:9", "legea_societatilor:9^1"]}
+{"variant": "Hibrid (RRF)", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:76", "codul_muncii:75", "codul_muncii:77", "constitutia:114"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-concediu", "type": "natural", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:150", "codul_muncii:147", "codul_muncii:148", "codul_muncii:146"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-concediere-medical", "type": "natural", "rank": 1, "top5": ["codul_muncii:60", "codul_muncii:151", "codul_muncii:152^1", "codul_muncii:51", "codul_muncii:152^2"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-varsta", "type": "natural", "rank": null, "top5": ["codul_muncii:124", "codul_muncii:128", "codul_muncii:202", "codul_muncii:83", "codul_rutier:20"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-contract-scris", "type": "natural", "rank": 3, "top5": ["codul_muncii:17", "codul_muncii:27", "codul_muncii:16", "codul_muncii:13", "codul_muncii:29"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-proba", "type": "natural", "rank": 2, "top5": ["codul_muncii:33", "codul_muncii:31", "codul_muncii:32", "codul_muncii:97", "codul_muncii:85"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-modificare", "type": "natural", "rank": 8, "top5": ["codul_muncii:45", "codul_muncii:46", "codul_muncii:6", "codul_muncii:21", "codul_muncii:17"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-program", "type": "natural", "rank": 1, "top5": ["codul_muncii:112", "codul_muncii:125", "codul_muncii:113", "codul_muncii:116", "codul_muncii:225"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:112", "codul_muncii:113", "codul_muncii:116", "codul_muncii:115"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:114", "codul_muncii:121", "codul_muncii:123", "codul_muncii:115"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:135", "codul_muncii:113", "codul_muncii:138", "codul_muncii:133"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-sarbatori", "type": "natural", "rank": 1, "top5": ["codul_muncii:139", "codul_muncii:142", "codul_muncii:141", "codul_muncii:143", "codul_muncii:145"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-fara-plata", "type": "natural", "rank": 2, "top5": ["codul_muncii:156", "codul_muncii:153", "codul_muncii:144", "codul_muncii:154", "codul_muncii:150"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:81", "codul_muncii:71"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cm-somaj-tehnic", "type": "natural", "rank": 4, "top5": ["codul_muncii:53^1", "codul_muncii:96", "codul_muncii:260", "codul_muncii:53", "codul_muncii:145"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "inf-concediu", "type": "informal", "rank": null, "top5": ["codul_muncii:147^1", "codul_muncii:157", "codul_muncii:156", "codul_muncii:144", "codul_muncii:51"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "codul_muncii:124", "codul_muncii:128", "constitutia:49", "codul_rutier:70"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "inf-fara-contract", "type": "informal", "rank": 3, "top5": ["codul_muncii:82", "codul_muncii:27", "codul_muncii:16", "codul_muncii:83", "codul_muncii:109"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:278^2"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "inf-telefon", "type": "informal", "rank": 6, "top5": ["codul_rutier:109^3", "codul_rutier:38", "codul_rutier:101", "codul_rutier:77", "codul_rutier:74"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:35", "codul_rutier:51", "codul_rutier:72", "codul_rutier:54"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ref-cm-41", "type": "explicit_ref", "rank": 2, "top5": ["constitutia:41", "codul_muncii:41", "codul_muncii:121", "codul_muncii:5", "codul_muncii:114"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:37", "constitutia:16", "constitutia:146", "constitutia:15"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ref-ls-183", "type": "explicit_ref", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:294", "legea_societatilor:188", "legea_societatilor:152^1", "legea_societatilor:190^1"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:128", "constitutia:32", "constitutia:4", "constitutia:152"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "constitutia:55", "codul_rutier:70", "legea_societatilor:101"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:81", "constitutia:82", "constitutia:83", "constitutia:55"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:63", "constitutia:81", "constitutia:89", "constitutia:110"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-mandat-parlament", "type": "natural", "rank": 1, "top5": ["constitutia:63", "constitutia:89", "constitutia:61", "constitutia:64", "constitutia:62"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_rutier:111", "codul_rutier:104^1", "codul_muncii:114", "constitutia:27"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-domiciliu", "type": "natural", "rank": 4, "top5": ["codul_rutier:5", "constitutia:44", "codul_rutier:39", "constitutia:27", "constitutia:23"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:151", "constitutia:147", "constitutia:150", "constitutia:155"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:37", "constitutia:85", "constitutia:83", "constitutia:82"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-viteza-localitate", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:53", "codul_rutier:6", "codul_rutier:41"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:6", "codul_rutier:48", "codul_rutier:74"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-rosu", "type": "natural", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:100", "codul_rutier:102", "codul_rutier:98", "codul_rutier:37"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:108", "codul_rutier:111", "codul_rutier:98", "codul_rutier:96"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:37", "codul_rutier:61", "codul_rutier:62", "codul_rutier:59"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64", "codul_rutier:108", "codul_rutier:64^1"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-forme", "type": "natural", "rank": 10, "top5": ["legea_societatilor:44", "legea_societatilor:251^20", "legea_societatilor:251^59", "legea_societatilor:8", "legea_societatilor:7"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:207", "legea_societatilor:208", "legea_societatilor:21"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:69^1", "legea_societatilor:69", "legea_societatilor:32", "codul_muncii:172"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:233", "legea_societatilor:227", "legea_societatilor:228", "legea_societatilor:229", "legea_societatilor:237"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:226", "legea_societatilor:285", "legea_societatilor:15"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:207", "legea_societatilor:208", "legea_societatilor:9^1", "legea_societatilor:9"]}
+{"variant": "Hibrid ponderat (BM25 × 0.3)", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:76", "codul_muncii:75", "codul_muncii:77", "constitutia:114"]}
+{"variant": "Vectori + reranker", "id": "cm-concediu", "type": "natural", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:147", "codul_muncii:148", "codul_muncii:150", "codul_muncii:147^1"]}
+{"variant": "Vectori + reranker", "id": "cm-concediere-medical", "type": "natural", "rank": 1, "top5": ["codul_muncii:60", "codul_muncii:145", "codul_muncii:61", "codul_muncii:152^1", "codul_muncii:64"]}
+{"variant": "Vectori + reranker", "id": "cm-varsta", "type": "natural", "rank": 1, "top5": ["codul_muncii:13", "codul_muncii:83", "codul_muncii:124", "codul_muncii:202", "codul_muncii:265"]}
+{"variant": "Vectori + reranker", "id": "cm-contract-scris", "type": "natural", "rank": 1, "top5": ["codul_muncii:16", "codul_muncii:13", "codul_muncii:84", "codul_muncii:83", "codul_muncii:17"]}
+{"variant": "Vectori + reranker", "id": "cm-proba", "type": "natural", "rank": 1, "top5": ["codul_muncii:31", "codul_muncii:32", "codul_muncii:97", "codul_muncii:85", "codul_muncii:33"]}
+{"variant": "Vectori + reranker", "id": "cm-modificare", "type": "natural", "rank": 2, "top5": ["codul_muncii:48", "codul_muncii:41", "codul_muncii:17", "codul_muncii:42", "codul_muncii:45"]}
+{"variant": "Vectori + reranker", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:72", "codul_muncii:62", "codul_muncii:73"]}
+{"variant": "Vectori + reranker", "id": "cm-program", "type": "natural", "rank": 1, "top5": ["codul_muncii:112", "codul_muncii:113", "codul_muncii:115", "codul_muncii:164", "constitutia:41"]}
+{"variant": "Vectori + reranker", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:113", "codul_muncii:112", "codul_muncii:116", "codul_muncii:115"]}
+{"variant": "Vectori + reranker", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:123", "codul_muncii:114", "codul_muncii:142", "codul_muncii:120"]}
+{"variant": "Vectori + reranker", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Vectori + reranker", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:113", "codul_muncii:135", "codul_muncii:134", "codul_muncii:142"]}
+{"variant": "Vectori + reranker", "id": "cm-sarbatori", "type": "natural", "rank": 1, "top5": ["codul_muncii:139", "codul_muncii:145", "codul_muncii:142", "codul_muncii:141", "codul_muncii:143"]}
+{"variant": "Vectori + reranker", "id": "cm-fara-plata", "type": "natural", "rank": 1, "top5": ["codul_muncii:153", "codul_muncii:154", "codul_muncii:155", "codul_muncii:156", "codul_muncii:152^1"]}
+{"variant": "Vectori + reranker", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:81", "codul_muncii:77", "codul_muncii:76", "codul_muncii:72"]}
+{"variant": "Vectori + reranker", "id": "cm-somaj-tehnic", "type": "natural", "rank": 1, "top5": ["codul_muncii:53", "codul_muncii:260", "codul_muncii:53^1", "codul_muncii:52", "codul_muncii:96"]}
+{"variant": "Vectori + reranker", "id": "inf-concediu", "type": "informal", "rank": null, "top5": ["codul_muncii:152^1", "codul_muncii:147^1", "codul_muncii:144", "codul_muncii:153^2", "codul_muncii:153^1"]}
+{"variant": "Vectori + reranker", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:124", "codul_muncii:128", "codul_muncii:112"]}
+{"variant": "Vectori + reranker", "id": "inf-fara-contract", "type": "informal", "rank": 3, "top5": ["codul_muncii:82", "codul_muncii:104", "codul_muncii:16", "codul_muncii:27", "codul_muncii:14"]}
+{"variant": "Vectori + reranker", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Vectori + reranker", "id": "inf-telefon", "type": "informal", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:36", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
+{"variant": "Vectori + reranker", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:51", "codul_rutier:108", "codul_rutier:35", "codul_rutier:6"]}
+{"variant": "Vectori + reranker", "id": "ref-cm-41", "type": "explicit_ref", "rank": 2, "top5": ["constitutia:41", "codul_muncii:41", "codul_muncii:4", "codul_muncii:5", "codul_muncii:1"]}
+{"variant": "Vectori + reranker", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:4", "constitutia:1", "constitutia:16", "constitutia:15"]}
+{"variant": "Vectori + reranker", "id": "ref-ls-183", "type": "explicit_ref", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:180", "legea_societatilor:153^24", "legea_societatilor:270^3", "legea_societatilor:188"]}
+{"variant": "Vectori + reranker", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:32", "constitutia:152", "constitutia:128", "constitutia:4"]}
+{"variant": "Vectori + reranker", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "constitutia:49", "constitutia:55", "constitutia:150"]}
+{"variant": "Vectori + reranker", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:81", "constitutia:83", "constitutia:36", "constitutia:82"]}
+{"variant": "Vectori + reranker", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:81", "constitutia:63", "legea_societatilor:140^1", "constitutia:97"]}
+{"variant": "Vectori + reranker", "id": "c-mandat-parlament", "type": "natural", "rank": 1, "top5": ["constitutia:63", "constitutia:89", "constitutia:66", "constitutia:64", "constitutia:62"]}
+{"variant": "Vectori + reranker", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_muncii:259", "codul_muncii:265", "codul_rutier:111", "codul_muncii:264"]}
+{"variant": "Vectori + reranker", "id": "c-domiciliu", "type": "natural", "rank": 1, "top5": ["constitutia:27", "constitutia:26", "constitutia:23", "constitutia:44", "constitutia:30"]}
+{"variant": "Vectori + reranker", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:155", "constitutia:150", "constitutia:156", "constitutia:151"]}
+{"variant": "Vectori + reranker", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:83", "constitutia:82", "constitutia:37", "constitutia:85"]}
+{"variant": "Vectori + reranker", "id": "cr-viteza-localitate", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:6", "codul_rutier:41", "codul_rutier:108"]}
+{"variant": "Vectori + reranker", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:74", "codul_rutier:108", "codul_rutier:41"]}
+{"variant": "Vectori + reranker", "id": "cr-rosu", "type": "natural", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:100", "codul_rutier:102", "codul_rutier:98", "codul_rutier:95"]}
+{"variant": "Vectori + reranker", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:111", "codul_rutier:104", "codul_rutier:96", "codul_rutier:108"]}
+{"variant": "Vectori + reranker", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:59", "codul_rutier:37", "codul_rutier:58", "codul_rutier:61"]}
+{"variant": "Vectori + reranker", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64^1", "codul_rutier:108", "codul_rutier:64"]}
+{"variant": "Vectori + reranker", "id": "ls-forme", "type": "natural", "rank": 5, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:42", "legea_societatilor:251^20", "legea_societatilor:2"]}
+{"variant": "Vectori + reranker", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:91", "legea_societatilor:93", "legea_societatilor:22"]}
+{"variant": "Vectori + reranker", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:67", "legea_societatilor:69^1", "legea_societatilor:201", "legea_societatilor:32"]}
+{"variant": "Vectori + reranker", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:228"]}
+{"variant": "Vectori + reranker", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:193", "legea_societatilor:82"]}
+{"variant": "Vectori + reranker", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:208", "legea_societatilor:9", "legea_societatilor:9^1", "legea_societatilor:93"]}
+{"variant": "Vectori + reranker", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}
+{"variant": "Hibrid + reranker", "id": "cm-concediu", "type": "natural", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:147", "codul_muncii:148", "codul_muncii:150", "codul_muncii:147^1"]}
+{"variant": "Hibrid + reranker", "id": "cm-concediere-medical", "type": "natural", "rank": 1, "top5": ["codul_muncii:60", "codul_muncii:145", "codul_muncii:61", "codul_muncii:152^1", "codul_muncii:64"]}
+{"variant": "Hibrid + reranker", "id": "cm-varsta", "type": "natural", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:83", "codul_muncii:124", "codul_muncii:202"]}
+{"variant": "Hibrid + reranker", "id": "cm-contract-scris", "type": "natural", "rank": 1, "top5": ["codul_muncii:16", "codul_muncii:13", "codul_muncii:83", "codul_muncii:17", "codul_muncii:29"]}
+{"variant": "Hibrid + reranker", "id": "cm-proba", "type": "natural", "rank": 1, "top5": ["codul_muncii:31", "codul_muncii:32", "codul_muncii:97", "codul_muncii:85", "codul_muncii:33"]}
+{"variant": "Hibrid + reranker", "id": "cm-modificare", "type": "natural", "rank": 2, "top5": ["codul_muncii:48", "codul_muncii:41", "codul_muncii:17", "codul_muncii:42", "codul_muncii:45"]}
+{"variant": "Hibrid + reranker", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:72", "codul_muncii:62", "constitutia:97"]}
+{"variant": "Hibrid + reranker", "id": "cm-program", "type": "natural", "rank": 1, "top5": ["codul_muncii:112", "codul_muncii:113", "codul_muncii:115", "codul_muncii:164", "constitutia:41"]}
+{"variant": "Hibrid + reranker", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:113", "codul_muncii:112", "codul_muncii:116", "codul_muncii:115"]}
+{"variant": "Hibrid + reranker", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:123", "codul_muncii:278^1", "codul_muncii:17", "codul_muncii:114"]}
+{"variant": "Hibrid + reranker", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Hibrid + reranker", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:113", "codul_muncii:135", "codul_muncii:115", "codul_muncii:125"]}
+{"variant": "Hibrid + reranker", "id": "cm-sarbatori", "type": "natural", "rank": 1, "top5": ["codul_muncii:139", "codul_muncii:145", "codul_muncii:281", "codul_muncii:142", "codul_muncii:141"]}
+{"variant": "Hibrid + reranker", "id": "cm-fara-plata", "type": "natural", "rank": 1, "top5": ["codul_muncii:153", "codul_muncii:154", "codul_muncii:155", "codul_muncii:156", "codul_muncii:144"]}
+{"variant": "Hibrid + reranker", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:81", "codul_muncii:77", "codul_muncii:76", "codul_muncii:74"]}
+{"variant": "Hibrid + reranker", "id": "cm-somaj-tehnic", "type": "natural", "rank": 1, "top5": ["codul_muncii:53", "codul_muncii:260", "codul_muncii:53^1", "codul_muncii:52", "codul_muncii:265"]}
+{"variant": "Hibrid + reranker", "id": "inf-concediu", "type": "informal", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:148", "codul_muncii:146", "codul_muncii:147", "codul_muncii:150"]}
+{"variant": "Hibrid + reranker", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:124", "codul_muncii:128", "codul_muncii:118^1"]}
+{"variant": "Hibrid + reranker", "id": "inf-fara-contract", "type": "informal", "rank": 4, "top5": ["codul_muncii:82", "codul_muncii:104", "codul_muncii:91", "codul_muncii:16", "codul_muncii:74"]}
+{"variant": "Hibrid + reranker", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:260"]}
+{"variant": "Hibrid + reranker", "id": "inf-telefon", "type": "informal", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:36", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
+{"variant": "Hibrid + reranker", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:82", "codul_rutier:51", "codul_rutier:108", "codul_rutier:35"]}
+{"variant": "Hibrid + reranker", "id": "ref-cm-41", "type": "explicit_ref", "rank": 2, "top5": ["constitutia:41", "codul_muncii:41", "codul_muncii:4", "codul_muncii:5", "codul_muncii:1"]}
+{"variant": "Hibrid + reranker", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:4", "constitutia:16", "constitutia:15", "constitutia:133"]}
+{"variant": "Hibrid + reranker", "id": "ref-ls-183", "type": "explicit_ref", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:180", "codul_muncii:183", "legea_societatilor:272", "legea_societatilor:153^24"]}
+{"variant": "Hibrid + reranker", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:32", "constitutia:152", "constitutia:128", "constitutia:120"]}
+{"variant": "Hibrid + reranker", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "constitutia:49", "constitutia:55", "constitutia:150"]}
+{"variant": "Hibrid + reranker", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:81", "constitutia:83", "constitutia:36", "constitutia:82"]}
+{"variant": "Hibrid + reranker", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:81", "constitutia:63", "constitutia:97", "constitutia:98"]}
+{"variant": "Hibrid + reranker", "id": "c-mandat-parlament", "type": "natural", "rank": 1, "top5": ["constitutia:63", "constitutia:89", "constitutia:66", "constitutia:64", "constitutia:62"]}
+{"variant": "Hibrid + reranker", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_muncii:259", "codul_muncii:265", "codul_rutier:111", "codul_muncii:264"]}
+{"variant": "Hibrid + reranker", "id": "c-domiciliu", "type": "natural", "rank": 1, "top5": ["constitutia:27", "constitutia:26", "constitutia:23", "constitutia:44", "codul_rutier:5"]}
+{"variant": "Hibrid + reranker", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:63", "constitutia:155", "constitutia:150", "constitutia:156"]}
+{"variant": "Hibrid + reranker", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:83", "constitutia:82", "constitutia:37", "constitutia:85"]}
+{"variant": "Hibrid + reranker", "id": "cr-viteza-localitate", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:6", "codul_rutier:72", "codul_rutier:41"]}
+{"variant": "Hibrid + reranker", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:74", "codul_rutier:102", "codul_rutier:108"]}
+{"variant": "Hibrid + reranker", "id": "cr-rosu", "type": "natural", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:100", "codul_rutier:102", "codul_rutier:98", "codul_rutier:99"]}
+{"variant": "Hibrid + reranker", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:111", "codul_rutier:104", "codul_rutier:96", "codul_rutier:108"]}
+{"variant": "Hibrid + reranker", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:59", "codul_rutier:37", "codul_rutier:58", "codul_rutier:61"]}
+{"variant": "Hibrid + reranker", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64^1", "codul_rutier:108", "codul_rutier:64"]}
+{"variant": "Hibrid + reranker", "id": "ls-forme", "type": "natural", "rank": 5, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:290", "legea_societatilor:251^20", "legea_societatilor:2"]}
+{"variant": "Hibrid + reranker", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:153^24", "legea_societatilor:91", "legea_societatilor:93"]}
+{"variant": "Hibrid + reranker", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:67", "legea_societatilor:69^1", "legea_societatilor:153^24", "legea_societatilor:201"]}
+{"variant": "Hibrid + reranker", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:228"]}
+{"variant": "Hibrid + reranker", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:15", "legea_societatilor:193"]}
+{"variant": "Hibrid + reranker", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:153^24", "legea_societatilor:208", "legea_societatilor:9", "legea_societatilor:9^1"]}
+{"variant": "Hibrid + reranker", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-concediu", "type": "natural", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:147", "codul_muncii:148", "codul_muncii:150", "codul_muncii:147^1"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-concediere-medical", "type": "natural", "rank": 1, "top5": ["codul_muncii:60", "codul_muncii:145", "codul_muncii:61", "codul_muncii:152^1", "codul_muncii:64"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-varsta", "type": "natural", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:83", "codul_muncii:124", "codul_muncii:202"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-contract-scris", "type": "natural", "rank": 1, "top5": ["codul_muncii:16", "codul_muncii:13", "codul_muncii:83", "codul_muncii:17", "codul_muncii:29"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-proba", "type": "natural", "rank": 1, "top5": ["codul_muncii:31", "codul_muncii:32", "codul_muncii:97", "codul_muncii:85", "codul_muncii:33"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-modificare", "type": "natural", "rank": 2, "top5": ["codul_muncii:48", "codul_muncii:41", "codul_muncii:17", "codul_muncii:42", "codul_muncii:45"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-demisie", "type": "natural", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:72", "codul_muncii:62", "constitutia:97"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-program", "type": "natural", "rank": 1, "top5": ["codul_muncii:112", "codul_muncii:113", "codul_muncii:115", "codul_muncii:164", "constitutia:41"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-max-ore", "type": "natural", "rank": 1, "top5": ["codul_muncii:114", "codul_muncii:113", "codul_muncii:112", "codul_muncii:116", "codul_muncii:115"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-ore-suplimentare", "type": "natural", "rank": 1, "top5": ["codul_muncii:122", "codul_muncii:123", "codul_muncii:278^1", "codul_muncii:17", "codul_muncii:114"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-noapte", "type": "natural", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:115"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-repaus", "type": "natural", "rank": 1, "top5": ["codul_muncii:137", "codul_muncii:113", "codul_muncii:135", "codul_muncii:115", "codul_muncii:125"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-sarbatori", "type": "natural", "rank": 1, "top5": ["codul_muncii:139", "codul_muncii:145", "codul_muncii:281", "codul_muncii:142", "codul_muncii:141"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-fara-plata", "type": "natural", "rank": 1, "top5": ["codul_muncii:153", "codul_muncii:154", "codul_muncii:155", "codul_muncii:156", "codul_muncii:144"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-preaviz-concediere", "type": "natural", "rank": 1, "top5": ["codul_muncii:75", "codul_muncii:81", "codul_muncii:77", "codul_muncii:76", "codul_muncii:74"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cm-somaj-tehnic", "type": "natural", "rank": 1, "top5": ["codul_muncii:53", "codul_muncii:260", "codul_muncii:53^1", "codul_muncii:52", "codul_muncii:265"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-concediu", "type": "informal", "rank": 1, "top5": ["codul_muncii:145", "codul_muncii:148", "codul_muncii:146", "codul_muncii:147", "codul_muncii:150"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-15-ani", "type": "informal", "rank": 1, "top5": ["codul_muncii:13", "constitutia:49", "codul_muncii:124", "codul_muncii:128", "codul_muncii:118^1"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-fara-contract", "type": "informal", "rank": 4, "top5": ["codul_muncii:82", "codul_muncii:104", "codul_muncii:91", "codul_muncii:16", "codul_muncii:74"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-noapte", "type": "informal", "rank": 1, "top5": ["codul_muncii:125", "codul_muncii:126", "codul_muncii:128", "codul_muncii:127", "codul_muncii:260"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-telefon", "type": "informal", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:36", "codul_rutier:38", "codul_rutier:109^3", "codul_rutier:24^1"]}
+{"variant": "Hibrid + reranker + referințe", "id": "inf-centura-spate", "type": "informal", "rank": 1, "top5": ["codul_rutier:36", "codul_rutier:82", "codul_rutier:51", "codul_rutier:108", "codul_rutier:35"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ref-cm-41", "type": "explicit_ref", "rank": 1, "top5": ["codul_muncii:41", "constitutia:41", "codul_muncii:4", "codul_muncii:5", "codul_muncii:1"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ref-const-14", "type": "explicit_ref", "rank": 1, "top5": ["constitutia:14", "constitutia:4", "constitutia:16", "constitutia:15", "constitutia:133"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ref-ls-183", "type": "explicit_ref", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:180", "codul_muncii:183", "legea_societatilor:272", "legea_societatilor:153^24"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-limba", "type": "natural", "rank": 1, "top5": ["constitutia:13", "constitutia:32", "constitutia:152", "constitutia:128", "constitutia:120"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-vot", "type": "natural", "rank": 1, "top5": ["constitutia:36", "constitutia:37", "constitutia:49", "constitutia:55", "constitutia:150"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-candidat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:37", "constitutia:81", "constitutia:83", "constitutia:36", "constitutia:82"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-mandat-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:83", "constitutia:81", "constitutia:63", "constitutia:97", "constitutia:98"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-mandat-parlament", "type": "natural", "rank": 1, "top5": ["constitutia:63", "constitutia:89", "constitutia:66", "constitutia:64", "constitutia:62"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-retinere", "type": "natural", "rank": 1, "top5": ["constitutia:23", "codul_muncii:259", "codul_muncii:265", "codul_rutier:111", "codul_muncii:264"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-domiciliu", "type": "natural", "rank": 1, "top5": ["constitutia:27", "constitutia:26", "constitutia:23", "constitutia:44", "codul_rutier:5"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-revizuire", "type": "natural", "rank": 1, "top5": ["constitutia:152", "constitutia:63", "constitutia:155", "constitutia:150", "constitutia:156"]}
+{"variant": "Hibrid + reranker + referințe", "id": "c-alegere-presedinte", "type": "natural", "rank": 1, "top5": ["constitutia:81", "constitutia:83", "constitutia:82", "constitutia:37", "constitutia:85"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cr-viteza-localitate", "type": "natural", "rank": 1, "top5": ["codul_rutier:49", "codul_rutier:50", "codul_rutier:6", "codul_rutier:72", "codul_rutier:41"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cr-viteza-autostrada", "type": "natural", "rank": 1, "top5": ["codul_rutier:50", "codul_rutier:49", "codul_rutier:74", "codul_rutier:102", "codul_rutier:108"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cr-rosu", "type": "natural", "rank": 2, "top5": ["codul_rutier:101", "codul_rutier:100", "codul_rutier:102", "codul_rutier:98", "codul_rutier:99"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cr-puncte", "type": "natural", "rank": 1, "top5": ["codul_rutier:103", "codul_rutier:111", "codul_rutier:104", "codul_rutier:96", "codul_rutier:108"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cr-pietoni", "type": "natural", "rank": 1, "top5": ["codul_rutier:72", "codul_rutier:59", "codul_rutier:37", "codul_rutier:58", "codul_rutier:61"]}
+{"variant": "Hibrid + reranker + referințe", "id": "cr-oprire", "type": "natural", "rank": 1, "top5": ["codul_rutier:63", "codul_rutier:65", "codul_rutier:64^1", "codul_rutier:108", "codul_rutier:64"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ls-forme", "type": "natural", "rank": 5, "top5": ["legea_societatilor:44", "legea_societatilor:1", "legea_societatilor:290", "legea_societatilor:251^20", "legea_societatilor:2"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ls-capital-sa", "type": "natural", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:9", "legea_societatilor:153^24", "legea_societatilor:91", "legea_societatilor:93"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ls-rezerva", "type": "natural", "rank": 1, "top5": ["legea_societatilor:183", "legea_societatilor:67", "legea_societatilor:69^1", "legea_societatilor:153^24", "legea_societatilor:201"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ls-dizolvare", "type": "natural", "rank": 2, "top5": ["legea_societatilor:229", "legea_societatilor:227", "legea_societatilor:153^24", "legea_societatilor:237", "legea_societatilor:228"]}
+{"variant": "Hibrid + reranker + referințe", "id": "ls-asociat-unic", "type": "natural", "rank": 1, "top5": ["legea_societatilor:13", "legea_societatilor:196^1", "legea_societatilor:285", "legea_societatilor:15", "legea_societatilor:193"]}
+{"variant": "Hibrid + reranker + referințe", "id": "trap-capital-srl", "type": "trap", "rank": 1, "top5": ["legea_societatilor:10", "legea_societatilor:153^24", "legea_societatilor:208", "legea_societatilor:9", "legea_societatilor:9^1"]}
+{"variant": "Hibrid + reranker + referințe", "id": "trap-preaviz-minim", "type": "trap", "rank": 1, "top5": ["codul_muncii:81", "codul_muncii:75", "codul_muncii:76", "codul_muncii:77", "codul_muncii:72"]}

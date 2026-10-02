@@ -29,6 +29,8 @@ class SearchConfig:
     """Câți candidați aduce fiecare metodă de căutare."""
     rerank_top: int = 20
     """Câți candidați fuzionați trec prin reranker."""
+    bm25_weight: float = 1.0
+    """Greutatea BM25 în fuziune (vectorii au 1.0)."""
 
 
 @dataclass
@@ -51,12 +53,15 @@ class ArticleHit:
         return (self.law_slug, self.article)
 
 
-def reciprocal_rank_fusion(rankings: list[list[Chunk]], k: int = RRF_K) -> dict[str, float]:
-    """Scor = Σ 1 / (k + rang). Combină clasamente cu scoruri incomparabile (BM25 vs. cosinus)."""
+def reciprocal_rank_fusion(
+    rankings: list[list[Chunk]], weights: list[float] | None = None, k: int = RRF_K
+) -> dict[str, float]:
+    """Scor = Σ w / (k + rang). Combină clasamente cu scoruri incomparabile (BM25 vs. cosinus)."""
+    weights = weights or [1.0] * len(rankings)
     scores: dict[str, float] = {}
-    for ranking in rankings:
+    for ranking, weight in zip(rankings, weights, strict=True):
         for rank, chunk in enumerate(ranking, start=1):
-            scores[chunk.id] = scores.get(chunk.id, 0.0) + 1.0 / (k + rank)
+            scores[chunk.id] = scores.get(chunk.id, 0.0) + weight / (k + rank)
     return scores
 
 
@@ -96,7 +101,8 @@ class Retriever:
             rankings["vector"] = [c for c, _ in self.vector.search(query, cfg.candidates, laws)]
 
         # 3. Fuziune.
-        fused = reciprocal_rank_fusion(list(rankings.values()))
+        weights = [cfg.bm25_weight if name == "bm25" else 1.0 for name in rankings]
+        fused = reciprocal_rank_fusion(list(rankings.values()), weights)
         candidates = sorted(fused, key=fused.get, reverse=True)
 
         # 4. Reranking: scorul cross-encoder-ului înlocuiește scorul RRF.
