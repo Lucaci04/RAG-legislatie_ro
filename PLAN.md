@@ -99,11 +99,11 @@ Mai târziu: Codul Civil și Codul Fiscal (mari, cu structură complexă).
 - [x] Script `index.py` reluabil (re-indexează doar ce s-a schimbat)
 
 ### Faza 4: Retrieval *(~2 zile)*
-- [ ] Căutare vectorială (top 30) și BM25 (top 30)
-- [ ] Combinare prin **Reciprocal Rank Fusion**
-- [ ] **Shortcut pentru referințe explicite**: „art. 145 din Codul Muncii” → căutare directă după metadate
-- [ ] Reranking și păstrarea top 5–8
-- [ ] Filtrare opțională după lege (dacă utilizatorul o specifică)
+- [x] Căutare vectorială (top 30) și BM25 (top 30)
+- [x] Combinare prin **Reciprocal Rank Fusion**
+- [x] **Shortcut pentru referințe explicite**: „art. 145 din Codul Muncii” → căutare directă după metadate
+- [x] Reranking și păstrarea top 5–8
+- [x] Filtrare opțională după lege (dacă utilizatorul o specifică)
 
 ### Faza 5: Generare *(~1 zi)*
 - [ ] Prompt de sistem: răspunde **doar** din context, citează fiecare afirmație, spune „nu am găsit” când e cazul

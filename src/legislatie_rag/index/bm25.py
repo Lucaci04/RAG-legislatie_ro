@@ -15,10 +15,15 @@ class BM25Index:
         self.chunks = chunks
         self._bm25 = BM25Okapi([tokenize(c.text) for c in chunks])
 
-    def search(self, query: str, k: int = 30) -> list[tuple[Chunk, float]]:
+    def search(
+        self, query: str, k: int = 30, laws: list[str] | None = None
+    ) -> list[tuple[Chunk, float]]:
         tokens = tokenize(query)
         if not tokens:
             return []
         scores = self._bm25.get_scores(tokens)
-        ranked = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:k]
+        allowed = [
+            i for i in range(len(self.chunks)) if not laws or self.chunks[i].law_slug in laws
+        ]
+        ranked = sorted(allowed, key=lambda i: scores[i], reverse=True)[:k]
         return [(self.chunks[i], float(scores[i])) for i in ranked if scores[i] > 0]

@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 from legislatie_rag.config import EMBEDDING_MODEL
 
 
-def _device() -> str:
+def device() -> str:
     if torch.backends.mps.is_available():
         return "mps"
     if torch.cuda.is_available():
@@ -19,7 +19,7 @@ def _device() -> str:
 
 @cache
 def get_model(name: str = EMBEDDING_MODEL) -> SentenceTransformer:
-    return SentenceTransformer(name, device=_device())
+    return SentenceTransformer(name, device=device())
 
 
 def embed(texts: list[str], batch_size: int = 16, show_progress: bool = False) -> np.ndarray:

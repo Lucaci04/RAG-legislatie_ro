@@ -28,11 +28,39 @@ class Law:
     Nu trebuie să fie ultima versiune: downloader-ul urmează istoricul
     consolidărilor și descarcă automat forma cea mai recentă.
     """
+    aliases: tuple[str, ...] = ()
+    """Cum se referă oamenii la lege într-o întrebare (litere mici, fără diacritice)."""
 
 
 LAWS: list[Law] = [
-    Law("constitutia", "Constituția României", "Constituția", 47355),
-    Law("codul_muncii", "Codul muncii", "Legea 53/2003", 309240),
-    Law("codul_rutier", "Circulația pe drumurile publice", "OUG 195/2002", 84237),
-    Law("legea_societatilor", "Legea societăților", "Legea 31/1990", 169688),
+    Law(
+        "constitutia",
+        "Constituția României",
+        "Constituția",
+        47355,
+        aliases=("constitutia", "constitutie", "constitutiei"),
+    ),
+    Law(
+        "codul_muncii",
+        "Codul muncii",
+        "Legea 53/2003",
+        309240,
+        aliases=("codul muncii", "codului muncii", "codul de munca", "53/2003", "legea 53"),
+    ),
+    Law(
+        "codul_rutier",
+        "Circulația pe drumurile publice",
+        "OUG 195/2002",
+        84237,
+        aliases=("codul rutier", "codului rutier", "195/2002", "oug 195"),
+    ),
+    Law(
+        "legea_societatilor",
+        "Legea societăților",
+        "Legea 31/1990",
+        169688,
+        aliases=("legea societatilor", "legii societatilor", "31/1990", "legea 31"),
+    ),
 ]
+
+RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"

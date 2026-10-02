@@ -31,9 +31,14 @@ class VectorIndex:
         self._by_id = {c.id: c for c in chunks}
         self._collection = get_collection()
 
-    def search(self, query: str, k: int = 30) -> list[tuple[Chunk, float]]:
+    def search(
+        self, query: str, k: int = 30, laws: list[str] | None = None
+    ) -> list[tuple[Chunk, float]]:
         result = self._collection.query(
-            query_embeddings=embed([query]).tolist(), n_results=k, include=["distances"]
+            query_embeddings=embed([query]).tolist(),
+            n_results=k,
+            where={"law_slug": {"$in": laws}} if laws else None,
+            include=["distances"],
         )
         return [
             (self._by_id[chunk_id], 1.0 - distance)
