@@ -14,12 +14,14 @@ Asistent care răspunde la întrebări despre legislația românească pe baza t
 ## Rulare locală
 
 ```bash
+cp .env.example .env    # apoi completează GEMINI_API_KEY (gratuit pe aistudio.google.com)
 uv sync
 uv run python -m legislatie_rag.ingest.download   # descarcă forma consolidată a legilor
 uv run python -m legislatie_rag.ingest.parse      # HTML → articole structurate
 uv run python -m legislatie_rag.ingest.chunk      # articole → chunk-uri pentru indexare
 uv run python -m legislatie_rag.index.vector      # embeddings bge-m3 → Chroma (incremental)
-uv run python -m legislatie_rag.retrieve.hybrid "Câte zile de concediu am?"   # căutare
+uv run python -m legislatie_rag.retrieve.hybrid "Câte zile de concediu am?"   # doar căutare
+uv run python -m legislatie_rag.generate.answer "Câte zile de concediu am?"   # răspuns complet
 uv run pytest
 ```
 

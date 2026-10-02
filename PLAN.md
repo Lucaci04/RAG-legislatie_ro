@@ -36,7 +36,7 @@ Fără autentificare, bază de date de producție sau scalare: nu aduc valoare p
 | Vector DB | Chroma (local) | Simplu, fără server |
 | Căutare cuvinte cheie | BM25 (`rank_bm25`) | Esențial pentru „art. 145”, termeni juridici exacți |
 | Reranker | `BAAI/bge-reranker-v2-m3` | Crește mult precizia, rulează local |
-| LLM | Claude (API Anthropic) | Calitate bună în română, respectă instrucțiunile de citare |
+| LLM | Gemini (`gemini-3.8-flash`, rezervă `flash-lite`) | Tier gratuit, calitate bună în română; strat de abstractizare pentru alți furnizori |
 | Interfață | CLI, apoi Streamlit | Iterare rapidă, apoi demo vizual |
 
 ---
@@ -70,7 +70,7 @@ proiect_1/
 ### Faza 0: Setup *(~0,5 zile)*
 - [x] `git init`, `.gitignore` (inclusiv `.env`, `data/raw`, modele)
 - [x] Mediu virtual (`uv` sau `venv`) și dependențe
-- [ ] Cheie API Anthropic în `.env`
+- [x] Cheie API Gemini în `.env`
 
 ### Faza 1: Colectarea datelor *(~1 zi)*
 Pornim cu legi mici și foarte folosite:
@@ -106,10 +106,10 @@ Mai târziu: Codul Civil și Codul Fiscal (mari, cu structură complexă).
 - [x] Filtrare opțională după lege (dacă utilizatorul o specifică)
 
 ### Faza 5: Generare *(~1 zi)*
-- [ ] Prompt de sistem: răspunde **doar** din context, citează fiecare afirmație, spune „nu am găsit” când e cazul
-- [ ] Format de citare uniform: *(Legea X/AAAA, art. N alin. M)*
-- [ ] Afișarea surselor folosite, cu link către legislatie.just.ro
-- [ ] Disclaimer: „Informație orientativă, nu consultanță juridică”
+- [x] Prompt de sistem: răspunde **doar** din context, citează fiecare afirmație, spune „nu am găsit” când e cazul
+- [x] Format de citare uniform: *(Legea X/AAAA, art. N alin. M)*
+- [x] Afișarea surselor folosite, cu link către legislatie.just.ro
+- [x] Disclaimer: „Informație orientativă, nu consultanță juridică”
 
 ### Faza 6: Evaluare *(~2 zile, apoi continuu)*
 - [ ] Set de **40–50 de întrebări** scrise manual, cu articolul corect pentru fiecare:
