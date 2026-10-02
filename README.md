@@ -10,6 +10,8 @@ Asistent care răspunde la întrebări despre legislația românească pe baza t
 - Codul muncii (Legea 53/2003)
 - Circulația pe drumurile publice (OUG 195/2002)
 - Legea societăților (Legea 31/1990)
+- Codul penal (Legea 286/2009)
+- Regimul juridic al contravențiilor (OG 2/2001)
 
 ## Rulare locală
 

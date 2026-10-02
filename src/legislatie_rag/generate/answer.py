@@ -50,6 +50,15 @@ def check_citations(text: str, n_sources: int) -> tuple[list[int], list[int]]:
     return valid, invalid
 
 
+def infer_cited_from_text(text: str, hits: list[ArticleHit]) -> list[int]:
+    """Rezervă când modelul citează „art. 228” în text, dar fără marcaje [n]."""
+    return [
+        n
+        for n, hit in enumerate(hits, start=1)
+        if re.search(rf"\bart(?:icolul|\.)?\s*{re.escape(hit.article)}(?![\d^])", text)
+    ]
+
+
 class RAG:
     def __init__(self, retriever: Retriever | None = None, llm: LLM | None = None, k: int = 5):
         self.retriever = retriever or Retriever()
@@ -74,6 +83,8 @@ class RAG:
         generation_ms = (time.perf_counter() - start) * 1000
 
         cited, invalid = check_citations(completion.text, len(hits))
+        if not cited:
+            cited = infer_cited_from_text(completion.text, hits)
         return Answer(
             question=question,
             text=completion.text,

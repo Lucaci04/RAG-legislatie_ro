@@ -16,6 +16,7 @@ EXAMPLES = [
     "Câte zile de concediu de odihnă am minim pe an?",
     "Mă poate concedia angajatorul cât sunt în concediu medical?",
     "Ce amendă iau dacă trec pe roșu?",
+    "Ce pedeapsă primești pentru furt, în funcție de gravitate?",
     "Ce vârstă trebuie să ai ca să candidezi la președinție?",
     "Care este capitalul social minim pentru un SRL?",
 ]
@@ -115,7 +116,7 @@ def main() -> None:
     laws = sidebar(rag)
 
     st.title("Întreabă legea")
-    st.caption("Codul muncii · Constituția · Codul rutier · Legea societăților")
+    st.caption(" · ".join(law.name for law in LAWS))
 
     messages = st.session_state.setdefault("messages", [])
     if not messages:

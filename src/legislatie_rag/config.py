@@ -61,6 +61,20 @@ LAWS: list[Law] = [
         169688,
         aliases=("legea societatilor", "legii societatilor", "31/1990", "legea 31"),
     ),
+    Law(
+        "codul_penal",
+        "Codul penal",
+        "Legea 286/2009",
+        268760,
+        aliases=("codul penal", "codului penal", "cod penal", "286/2009", "legea 286"),
+    ),
+    Law(
+        "regimul_contraventiilor",
+        "Regimul juridic al contravențiilor",
+        "OG 2/2001",
+        38393,
+        aliases=("regimul contraventiilor", "og 2/2001", "2/2001", "ordonanta 2/2001"),
+    ),
 ]
 
 RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"

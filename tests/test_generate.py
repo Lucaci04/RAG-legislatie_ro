@@ -3,7 +3,7 @@ from types import SimpleNamespace
 import pytest
 from google.genai import errors
 
-from legislatie_rag.generate.answer import RAG, check_citations
+from legislatie_rag.generate.answer import RAG, check_citations, infer_cited_from_text
 from legislatie_rag.generate.llm import Completion, GeminiLLM, LLMUnavailableError
 from legislatie_rag.generate.prompt import NO_SOURCES_ANSWER, SYSTEM_PROMPT, build_prompt
 from legislatie_rag.retrieve.hybrid import ArticleHit
@@ -36,6 +36,13 @@ def test_check_citations_separates_valid_and_invented():
     valid, invalid = check_citations("Da [2]. Și [1], iar [2] din nou. Dar [7].", n_sources=3)
     assert valid == [2, 1]
     assert invalid == [7]
+
+
+def test_infer_cited_from_text_without_markers():
+    hits = [make_hit("228", ""), make_hit("229", ""), make_hit("22", ""), make_hit("152^2", "")]
+    text = "Furtul (art. 228 alin. (1)) și furtul calificat (art. 229). Vezi art. 152^2."
+
+    assert infer_cited_from_text(text, hits) == [1, 2, 4]
 
 
 def test_build_prompt_numbers_sources_with_context_header():

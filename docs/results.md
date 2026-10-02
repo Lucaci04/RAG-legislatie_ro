@@ -1,8 +1,8 @@
 # Rezultatele evaluării
 
-Set de evaluare: **52 de întrebări** ([data/eval/questions.jsonl](../data/eval/questions.jsonl)), fiecare cu articolul corect verificat manual în textul legii: 47 cu răspuns în legile indexate și 5 fără (pentru a testa refuzul).
+Set de evaluare: **59 de întrebări** ([data/eval/questions.jsonl](../data/eval/questions.jsonl)), fiecare cu articolul corect verificat manual în textul legii: 54 cu răspuns în legile indexate și 5 fără (pentru a testa refuzul).
 
-> La 47 de întrebări, o întrebare valorează ~2%. Diferențele de câteva puncte procentuale trebuie citite cu prudență.
+> La 54 de întrebări, o întrebare valorează ~2%. Diferențele de câteva puncte procentuale trebuie citite cu prudență.
 
 ## 1. Variante de căutare
 
@@ -10,13 +10,13 @@ Set de evaluare: **52 de întrebări** ([data/eval/questions.jsonl](../data/eval
 
 | Variantă | Recall@1 | Recall@3 | Recall@5 | MRR | Latență |
 |---|---|---|---|---|---|
-| BM25 | 49% | 68% | 74% | 0.602 | 1 ms |
-| Vectori (bge-m3) | 81% | 91% | 94% | 0.863 | 20 ms |
-| Hibrid (RRF) | 64% | 77% | 85% | 0.732 | 19 ms |
-| Hibrid ponderat (BM25 × 0.3) | 70% | 85% | 89% | 0.788 | 20 ms |
-| Vectori + reranker | 85% | 96% | 98% | 0.905 | 1079 ms |
-| Hibrid + reranker | 87% | 96% | 100% | 0.924 | 1100 ms |
-| Hibrid + reranker + referințe | 89% | 96% | 100% | 0.935 | 1094 ms |
+| BM25 | 52% | 70% | 76% | 0.623 | 1 ms |
+| Vectori (bge-m3) | 83% | 93% | 94% | 0.881 | 19 ms |
+| Hibrid (RRF) | 67% | 81% | 85% | 0.757 | 19 ms |
+| Hibrid ponderat (BM25 × 0.3) | 76% | 87% | 89% | 0.822 | 19 ms |
+| Vectori + reranker | 87% | 96% | 98% | 0.917 | 1098 ms |
+| Hibrid + reranker | 89% | 96% | 100% | 0.931 | 1115 ms |
+| Hibrid + reranker + referințe | 91% | 96% | 100% | 0.940 | 1128 ms |
 
 **Concluzii**
 
@@ -31,9 +31,9 @@ Set de evaluare: **52 de întrebări** ([data/eval/questions.jsonl](../data/eval
 
 | Model | Parametri | Dimensiune | Recall@1 | Recall@5 | MRR | Indexare |
 |---|---|---|---|---|---|---|
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118M | 384 | 32% | 62% | 0.449 | 2 s |
-| intfloat/multilingual-e5-small | 118M | 384 | 66% | 89% | 0.758 | 4 s |
-| intfloat/multilingual-e5-base | 278M | 768 | 66% | 85% | 0.733 | 10 s |
-| BAAI/bge-m3 | 568M | 1024 | 81% | 94% | 0.863 | 38 s |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118M | 384 | 31% | 57% | 0.427 | 3 s |
+| intfloat/multilingual-e5-small | 118M | 384 | 63% | 91% | 0.748 | 6 s |
+| intfloat/multilingual-e5-base | 278M | 768 | 67% | 85% | 0.742 | 16 s |
+| BAAI/bge-m3 | 568M | 1024 | 83% | 94% | 0.881 | 55 s |
 
 **Concluzii:** bge-m3 câștigă clar la Recall@1. Modelul E5-base, deși de 2,4× mai mare, nu bate E5-small. MiniLM, antrenat pe parafraze scurte, e nepotrivit pentru articole de lege.
