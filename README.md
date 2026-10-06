@@ -31,3 +31,7 @@ uv run pytest
 ## Notă
 
 Textele actelor normative nu sunt protejate de dreptul de autor (Legea 8/1996, art. 9). Aplicația oferă informații orientative, nu consultanță juridică.
+
+## Licență
+
+[MIT](LICENSE) pentru cod. Textele legilor sunt preluate de pe portalul oficial legislatie.just.ro.

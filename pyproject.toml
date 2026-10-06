@@ -3,6 +3,7 @@ name = "legislatie-rag"
 version = "0.1.0"
 description = "Asistent RAG care răspunde la întrebări despre legislația românească, cu citarea articolelor."
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.12",
