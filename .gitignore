@@ -9,6 +9,9 @@ __pycache__/
 
 # Secrete
 .env
+.env.*
+!.env.example
+.streamlit/secrets.toml
 
 # Date generate (se pot regenera cu scripturile din proiect)
 data/raw/
@@ -17,6 +20,15 @@ data/index.nosync/
 
 # Modele descărcate
 models/
+
+# Rezultate parțiale de evaluare (se publică doar când sunt complete)
+data/eval/results/answers.jsonl
+data/eval/results/judgments.jsonl
+
+# Editoare și unelte locale
+.vscode/
+.idea/
+.claude/
 
 # macOS
 .DS_Store
