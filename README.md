@@ -100,8 +100,8 @@ Si cateva lucruri invatate pe pielea mea, care nu apar in tutoriale:
 Ai nevoie de Python 3.12+, [uv](https://github.com/astral-sh/uv) si o cheie Gemini gratuita de pe [aistudio.google.com](https://aistudio.google.com).
 
 ```bash
-git clone https://github.com/Lucaci04/legislatie-rag.git
-cd legislatie-rag
+git clone https://github.com/Lucaci04/RAG-legislatie_ro.git
+cd RAG-legislatie_ro
 cp .env.example .env        # pune cheia Gemini in .env
 uv sync
 ```
